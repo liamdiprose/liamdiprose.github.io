@@ -1,0 +1,18 @@
+name: Liam Diprose
+phone: 0279191620
+email: liam@liamdiprose.com
+
+projects:
+        - title: Realtime Time Series Embedded Database
+          skills:
+                - Rust
+                - Vue.js
+        - title: University Course Website Scrapper
+          skills:
+                - Python 3
+                - HTML
+                - RESTful clients
+
+skills:
+        - Linux Adminstration
+        - Written and Oral Communication
