@@ -28,7 +28,7 @@ ul {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto repeat(3, 1fr);
+  grid-template-rows: auto repeat(4, 1fr);
   grid-gap: 7pt;
   grid-template-areas: 
     "head head head"
@@ -47,6 +47,10 @@ ul {
   justify-content: space-between;
   margin: 0pt;
   padding-bottom: 12pt;
+
+
+  
+
 
 }
 
@@ -152,4 +156,8 @@ ul {
 
 #education {
   grid-area: edu;
+}
+
+#experience.section {
+  grid-area: exp;
 }
