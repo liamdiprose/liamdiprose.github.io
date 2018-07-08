@@ -29,12 +29,12 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto repeat(4, 1fr);
-  grid-gap: 7pt;
+  column-gap: 12pt;
   grid-template-areas: 
     "head head head"
-    "pro pro exp"
-    "pro pro exp"
-    "skl skl exp"
+    "pro pro skl"
+    "pro pro skl"
+    "exp exp exp"
     "int edu edu";
 }
 
@@ -47,10 +47,6 @@ ul {
   justify-content: space-between;
   margin: 0pt;
   padding-bottom: 12pt;
-
-
-  
-
 
 }
 
@@ -160,4 +156,15 @@ ul {
 
 #experience.section {
   grid-area: exp;
+  .experience-placements {
+    display: flex;
+    flex-direction: row;
+  }
+  .placement {
+    h3, h4 {
+      margin: 0;
+      padding: 0;
+    }
+    margin-right: 5pt;
+  }
 }
