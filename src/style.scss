@@ -15,34 +15,33 @@ ul {
   width: 210mm;
 }
 
-#page-container {
+.page-container {
   height: 297mm;
   width: 210mm;
-  margin: 7mm;
+  margin: auto;
   box-shadow: 2mm 4mm 1mm gray;  /* TODO: media query, and not for @page */
   padding: 7mm;
+  background-color: white;
 }
 
 #page-content {
-  max-width: 210mm - (2 * 7mm);
+  // max-width: 210mm - (2 * 7mm);
   height: 100%;
-  background-color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto-fit repeat(auto-fill, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+  grid-gap: 7pt;
 }
 
 #header {
-  /* grid-column: minmax(2fr, 3fr); */
   grid-column: 1 / -1; /* min(300pt, 100%); */
-  // padding-bottom: 0%;
-  // grid-areas: header;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0pt;
+  padding-bottom: 12pt;
 
 }
 
@@ -61,8 +60,6 @@ ul {
 }
 
 #contact-details {
-  // box-sizing: border-box;
-  // position: relative;
   margin: auto;
 }
 
@@ -95,7 +92,7 @@ ul {
 
 .section {
   /* border: 1px solid black; */
-  padding: 3pt;
+  // padding: 3pt;
 
   .section-title {
     margin-top: 0;
@@ -105,10 +102,6 @@ ul {
   }
   /* grid-column: 1; */
   /* grid-row: 1; */
-  ul {
-    margin-top: 2pt;
-    margin-bottom: 2pt;
-  }
 }
 
 .section-flourish {
@@ -124,16 +117,14 @@ ul {
   height: 15pt;
 }
 
-#skills {
+#skills.section {
   grid-row: 2 / 4;
   grid-column: 1;
 }
 
-#projects {
-  .section-title {
-    grid-column: 1 / -1;
-  }
-  .section-flourish {
+#projects.section {
+  #projects-title {
+    display: inline-block;
     grid-column: 1 / -1;
   }
 
@@ -145,14 +136,18 @@ ul {
       margin: 0;
     }
   }
+
+  ul {
+    margin-top: 2pt;
+    margin-bottom: 2pt;
+  }
   
-  /* border: 1px solid black; */
   grid-column: span 2;
   grid-row: span 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 15pt repeat(auto-fill, 1fr);
-  /* padding: 0px; */
+  grid-template-rows: auto repeat(3, 1fr);
+  grid-gap: 5pt;
 }
 
 #interests {
