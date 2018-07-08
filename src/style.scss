@@ -30,10 +30,21 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
   grid-gap: 7pt;
+  grid-template-areas: 
+    // "head head head"
+    // "exp pro pro"
+    // "exp pro pro"
+    // "exp skl skl"
+    // "edu edu int";
+    "head head head"
+    "pro pro exp"
+    "pro pro exp"
+    "skl skl exp"
+    "int edu edu";
 }
 
 #header {
-  grid-column: 1 / -1;
+  grid-area: head;
 
   display: flex;
   flex-direction: row;
@@ -117,8 +128,9 @@ ul {
 }
 
 #skills.section {
-  grid-row: 2 / 4;
-  grid-column: 1;
+  // grid-row: 2 / 4;
+  grid-area: skl;
+  // grid-column: 1;
 }
 
 #projects.section {
@@ -141,8 +153,10 @@ ul {
     margin-bottom: 2pt;
   }
   
-  grid-column: span 2;
-  grid-row: span 2;
+  // grid-column: span 2;
+  // grid-row: span 2;
+  grid-area: pro;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
@@ -150,6 +164,7 @@ ul {
 }
 
 #interests {
+  grid-area: int;
   // display: float;
   // grid-row: row 2;
   // grid-column: col 2;
@@ -157,6 +172,7 @@ ul {
 }
 
 #education {
-  grid-row: 4;
-  grid-column:  span 2;
+  grid-area: edu;
+  // grid-row: 4;
+  // grid-column:  span 2;
 }
