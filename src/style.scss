@@ -5,7 +5,6 @@ html {
 ul {
   list-style-type: square;
   padding-left: 0px;
-
   list-style-position: inside;
 }
 
@@ -34,7 +33,7 @@ ul {
 }
 
 #header {
-  grid-column: 1 / -1; /* min(300pt, 100%); */
+  grid-column: 1 / -1;
 
   display: flex;
   flex-direction: row;
@@ -48,8 +47,8 @@ ul {
 #header-title {
   #name-title {
     font-variant: small-caps;
-    font-size: 28pt;
-    margin-top: 5pt;
+    font-size: 32pt;
+    margin-top: 0;
     margin-bottom: 0pt;
   }
   #name-subtitle {
@@ -114,7 +113,7 @@ ul {
 .section-title {
   padding-top: 10px;
   text-transform: uppercase;
-  height: 15pt;
+  // height: 15pt;
 }
 
 #skills.section {
