@@ -1,0 +1,183 @@
+<html>
+
+<head>
+  <title>{{ name }} Resume</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div id="page-content">
+      <div id="header">
+        <div id="header-title">
+          <h1 id="name-title">
+            {{ name }}
+          </h1>
+          <h3 id="name-subtitle">
+            {{ subtitle }}
+          </h3>
+        </div>
+        <div id="contact-details">
+          <div id="contact-details-content">
+            <div class="contact-item" id="phone">
+              <div class="item-title">
+                Phone
+              </div>
+              <div class="item-value">
+                {{ contact.phone }}
+              </div>
+            </div>
+            <div class="contact-item" id="email">
+              <div class="item-title">
+                Email
+              </div>
+              <div class="item-value">
+                {{ contact.email }}
+              </div>
+            </div>
+            <div class="contact-item" id="github">
+              <div class="item-title">
+                GitHub
+              </div>
+              <div class="item-value">
+                {{ contact.github }}
+                <!-- TODO: Hyperlink -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{#skills}}
+      {{#first}}
+      <div class="section" id="skills">
+        <div class="section-flourish"></div>
+        <h2 class="section-title">
+          Skills
+        </h2>
+        <ul id="skills-content">
+          {{/first}}
+          <li>{{name}}</li>
+          <p>{{ more }}</p>
+        {{#last}}
+        </ul>
+        {{/last}}
+      </div>
+      {{/skills}} 
+
+      {{#projects}} 
+      {{#first}}
+      <div class="section" id="projects">
+        <div id="projects-title">
+          <div class="section-flourish"></div>
+          <h2 class="section-title">
+            Projects
+          </h2>
+        </div>
+        {{/first}}
+        <div class="project">
+          <h3 class="title">
+            {{ title }}
+          </h3>
+          <p class="description">
+            {{ description }}
+          </p>
+          {{#skills}} 
+          {{#first}}
+          <ul class="project-tech">
+          {{/first}}
+            <li>{{.}}</li>
+          {{#last}}
+          </ul>
+          {{/last}}
+          {{/skills}}
+          {{#last}}
+        </div>
+      </div>
+      {{/last}}
+      {{/projects}} 
+
+      {{#education}} 
+      {{#first}}
+      <div class="section" id="education">
+        <div class="section-flourish"></div>
+        <h2 class="section-title">
+          Education
+        </h2>
+      {{/first}}
+        <div class="education-item">
+          <img class="education-logo" src="{{ logo }}">
+          <h3 class="title">
+            {{ title }}
+          </h3>
+          <h4 class="education-provider">
+            {{ provider }}
+          </h4>
+          <h5 class="education-city">{{ city }}, {{ country }}</h5>
+          <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
+        </div>
+      {{#last}}
+      </div>
+      {{/last}}
+      {{/education}}
+      
+      {{#interests}}
+      {{#first}}
+      <div class="section" id="interests">
+        <div class="section-flourish"></div>
+        <h2 class="section-title">
+          Interests
+        </h2>
+        <ul>
+      {{/first}}
+          <li>{{ . }}</li>
+      {{#last}}
+        </ul>
+      </div>
+      {{/last}}
+      {{/interests}}
+
+      <div class="section" id="experience">
+        <div class="section-flourish"></div>
+        <h2 class="section-title">
+          Professional Experience
+        </h2>
+        <div class="experience-placements">
+          <div class="placement">
+            <!-- TODO: Logo -->
+            <h3 class="placement-jobtitle">
+              Junior Design Engineer
+            </h3>
+            <h4 class="placement-name">
+              Tait Communications
+            </h4>
+            <ul class="placement-duties">
+              <li>Programming</li>
+              <li>Research</li>
+              <li>Stuff</li>
+            </ul>
+          </div>
+          <div class="placement">
+            <!-- TODO: Logo -->
+            <h3 class="placement-jobtitle">
+              Software Developer
+            </h3>
+            <h4 class="placement-name">
+              Agsense NZ
+            </h4>
+            <ul class="placement-duties">
+              <li>Programming</li>
+              <li>Research</li>
+              <li>Stuff</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- page content -->
+  </div>
+  <!-- page container -->
+</body>
+
+</html>

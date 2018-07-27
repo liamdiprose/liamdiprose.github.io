@@ -1,7 +1,9 @@
 name: Liam Diprose
-phone: +64 27 9191620
-email: liam@liamdiprose.com
-github: liamdiprose
+subtitle: Computer Engineering Graduate
+contact:
+        phone: +64 27 9191620
+        email: liam@liamdiprose.com
+        github: liamdiprose
 
 projects:
         - title: Dairy Farm IoT Platform
@@ -53,15 +55,18 @@ projects:
                 - Answer Set Programming
 
 skills:
-        - Linux Adminstration: Having a desktop with Arch
-        - Written and Oral Communication: Doing heaps or reports for university
-        - Version Control:
-        - Debian Package Creation:
-        - System Level Design:
-        - Computer Networking:
-        - Programming Competition: 4th in New Zealand <programming competition
-        - User Experience?:
-        - Master Searchbar User:
+        - name: Linux Adminstration
+          more: Having a desktop with Arch
+        - name: Written and Oral Communication
+          more: Doing heaps or reports for university
+        - name: Version Control
+        - name: Debian Package Creation
+        - name: System Level Design
+        - name: Computer Networking
+        - name: Programming Competition
+          more: 4th in New Zealand <programming competition
+        - name: User Experience?
+        - name: Master Searchbar User
         
 
 experience:
@@ -84,5 +89,10 @@ education:
           country: New Zealand
           duration:
                 start: Feb 2015
-                end: Nov 2019
+                finish: Nov 2019
           gpa: 6.67
+
+interests:
+        - Photography
+        - Tramping
+        - Design
