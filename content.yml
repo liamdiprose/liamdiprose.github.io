@@ -1,18 +1,88 @@
 name: Liam Diprose
-phone: 0279191620
+phone: +64 27 9191620
 email: liam@liamdiprose.com
+github: liamdiprose
 
 projects:
-        - title: Realtime Time Series Embedded Database
+        - title: Dairy Farm IoT Platform
+          description: Sensor data storage and presentation for dairy farms.
           skills:
                 - Rust
                 - Vue.js
-        - title: University Course Website Scrapper
+                - d3.js
+
+        - title: University Website File Scrapper
+          description: Script downloads all course files, such as lecture notes to a local directory. Shared on GitHub with active users.
           skills:
                 - Python 3
-                - HTML
-                - RESTful clients
+                - Open Source Colabouration
+
+        - title: Computer Vision Cow Tracking Research
+          description: Research project investigating the use of a deep learning framework for tracking cows.
+          skills:
+                - Python + OpenCV
+                - Tensorflow
+                - Amazon Web Services
+
+        - title: Toy Helicopter Control System
+          description: Realtime Embedded PID controller for a remote control helicopter.
+          skills:
+                - Embedded Software Development
+                - C
+                - ARM Microcontrollers
+
+        - title: Quick Network Gateway Switcher
+          description: Quickly switch between two network gateways by double clicking a system tray icon.
+          skills:
+                - C++ / Qt
+                - Cross Platform Development
+                - Route Table Networking
+
+        - title: Responsive Resume Layout 
+          description: Developed this resume as a responsive layout with modern HTML and CSS.
+          skills:
+                - CSS Grid
+                - CSS Flexbox
+                - Webpack
+
+        - title: VHDL to Redstone Compiler
+          description: Compile a hardware description language logic circuit to a working 3D 'redstone' implementation for the Minecraft computer game.
+          skills:
+                - Scala
+                - ANTLR 4 [?]
+                - Answer Set Programming
 
 skills:
-        - Linux Adminstration
-        - Written and Oral Communication
+        - Linux Adminstration: Having a desktop with Arch
+        - Written and Oral Communication: Doing heaps or reports for university
+        - Version Control:
+        - Debian Package Creation:
+        - System Level Design:
+        - Computer Networking:
+        - Programming Competition: 4th in New Zealand <programming competition
+        - User Experience?:
+        - Master Searchbar User:
+        
+
+experience:
+        - title: Junior Design Engineer
+          employeer: Tait Communications
+          duration:
+                start: Nov 2017
+                end: Feb 2018
+        
+        - title: Software Developer
+          employeer: AgSense NZ
+          duration:
+                start: Nov 2016
+                end: May 2017
+
+education:
+        - degree: Bachelor of Computer Engineering with Honours
+          provider: University of Canterbury
+          city: Christchurch
+          country: New Zealand
+          duration:
+                start: Feb 2015
+                end: Nov 2019
+          gpa: 6.67

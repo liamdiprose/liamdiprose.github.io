@@ -4,7 +4,7 @@ html {
 
 ul {
   list-style-type: square;
-  padding-left: 0px;
+  padding-left: 2px;
   list-style-position: inside;
 }
 
@@ -102,6 +102,14 @@ ul {
   }
 }
 
+// .section:before {
+  // content: '';
+  // background-color: black;
+  // height: 5pt;
+  // width: 100%;
+  // position: absolute;
+// }
+
 .section-flourish {
   background-color: black;
   height: 5pt;
@@ -152,6 +160,17 @@ ul {
 
 #education {
   grid-area: edu;
+
+  h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .education-logo {
+
+    width: 60px;
+  }
+
 }
 
 #experience.section {
@@ -161,7 +180,7 @@ ul {
     flex-direction: row;
   }
   .placement {
-    h3, h4 {
+    h3, h4, h5 {
       margin: 0;
       padding: 0;
     }
