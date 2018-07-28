@@ -29,14 +29,14 @@ ul {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto repeat(4, 1fr);
+  grid-template-rows: auto repeat(5, 1fr);
   column-gap: 12pt;
   grid-template-areas: 
     "head head head"
-    "pro pro skl"
-    "pro pro skl"
-    "pro pro skl"
-    "space edu edu"
+    "skl pro pro"
+    "skl pro pro"
+    "skl pro pro"
+    "edu edu  . "
     "exp exp exp";
 }
 
@@ -162,6 +162,13 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
   grid-gap: 5pt;
+}
+
+// Block out space used by education block
+#projects.section::after {
+  content: "";
+  grid-column: 1;
+  grid-row: 5;
 }
 
 #interests {

@@ -37,7 +37,7 @@ projects:
           description: As my Engineering Honours project, I developed a software thing with
             signal processing.
           skills:
-            - Python (SQLAlchemy + Swagger + Flask)
+            - Python (OpenAPI + Flask)
             - PostgreSQL
             - Microservice Architecture
             - Ansible 
