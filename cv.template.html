@@ -121,21 +121,17 @@
       {{/last}}
       {{/education}}
       
-      {{#interests}}
-      {{#first}}
       <div class="section" id="interests">
         <div class="section-flourish"></div>
         <h2 class="section-title">
           Interests
         </h2>
         <ul>
-      {{/first}}
+      {{#interests}}
           <li>{{ . }}</li>
-      {{#last}}
+      {{/interests}}
         </ul>
       </div>
-      {{/last}}
-      {{/interests}}
 
       <div class="section" id="experience">
         <div class="section-flourish"></div>
