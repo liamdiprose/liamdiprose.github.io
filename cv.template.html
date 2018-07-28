@@ -48,25 +48,19 @@
         </div>
       </div>
 
-      {{#skills}}
-      {{#first}}
       <div class="section" id="skills">
         <div class="section-flourish"></div>
         <h2 class="section-title">
           Skills
         </h2>
         <ul id="skills-content">
-          {{/first}}
+      {{#skills}}
           <li>{{name}}</li>
           <p>{{ more }}</p>
-        {{#last}}
-        </ul>
-        {{/last}}
-      </div>
       {{/skills}} 
+        </ul>
+      </div>
 
-      {{#projects}} 
-      {{#first}}
       <div class="section" id="projects">
         <div id="projects-title">
           <div class="section-flourish"></div>
@@ -74,7 +68,7 @@
             Projects
           </h2>
         </div>
-        {{/first}}
+      {{#projects}} 
         <div class="project">
           <h3 class="title">
             {{ title }}
@@ -82,29 +76,21 @@
           <p class="description">
             {{ description }}
           </p>
-          {{#skills}} 
-          {{#first}}
           <ul class="project-tech">
-          {{/first}}
+          {{#skills}} 
             <li>{{.}}</li>
-          {{#last}}
-          </ul>
-          {{/last}}
           {{/skills}}
-          {{#last}}
+          </ul>
         </div>
-      </div>
-      {{/last}}
       {{/projects}} 
+      </div>
 
-      {{#education}} 
-      {{#first}}
       <div class="section" id="education">
         <div class="section-flourish"></div>
         <h2 class="section-title">
           Education
         </h2>
-      {{/first}}
+      {{#education}} 
         <div class="education-item">
           <img class="education-logo" src="{{ logo }}">
           <h3 class="title">
@@ -115,11 +101,14 @@
           </h4>
           <h5 class="education-city">{{ city }}, {{ country }}</h5>
           <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
+          <ul>
+            {{#degrees}}
+            <li>{{ . }}</li>
+            {{/degrees}}
+          </ul>
         </div>
-      {{#last}}
-      </div>
-      {{/last}}
       {{/education}}
+      </div>
       
       <div class="section" id="interests">
         <div class="section-flourish"></div>
@@ -139,35 +128,21 @@
           Professional Experience
         </h2>
         <div class="experience-placements">
+          {{#experience}}
           <div class="placement">
-            <!-- TODO: Logo -->
             <h3 class="placement-jobtitle">
-              Junior Design Engineer
+              {{ title }}
             </h3>
             <h4 class="placement-name">
-              Tait Communications
+              {{ employer }}
             </h4>
             <ul class="placement-duties">
-              <li>Programming</li>
-              <li>Research</li>
-              <li>Stuff</li>
+              {{#duties}}
+              <li>{{ . }}</li>
+              {{/duties}}
             </ul>
           </div>
-          <div class="placement">
-            <!-- TODO: Logo -->
-            <h3 class="placement-jobtitle">
-              Software Developer
-            </h3>
-            <h4 class="placement-name">
-              Agsense NZ
-            </h4>
-            <ul class="placement-duties">
-              <li>Programming</li>
-              <li>Research</li>
-              <li>Stuff</li>
-            </ul>
-          </div>
-        </div>
+          {{/experience}}
       </div>
 
     </div>

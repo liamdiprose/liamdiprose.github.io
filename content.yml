@@ -6,12 +6,6 @@ contact:
         github: liamdiprose
 
 projects:
-        - title: Dairy Farm IoT Platform
-          description: Sensor data storage and presentation for dairy farms.
-          skills:
-                - Rust
-                - Vue.js
-                - d3.js
 
         - title: University Website File Scrapper
           description: Script downloads all course files, such as lecture notes to a local directory. Shared on GitHub with active users.
@@ -33,6 +27,13 @@ projects:
                 - C
                 - ARM Microcontrollers
 
+        - title: Dairy Farm IoT Platform
+          description: Sensor data storage and presentation for dairy farms.
+          skills:
+                - Rust
+                - Vue.js
+                - d3.js
+
         - title: Quick Network Gateway Switcher
           description: Quickly switch between two network gateways by double clicking a system tray icon.
           skills:
@@ -48,7 +49,9 @@ projects:
                 - Webpack
 
         - title: VHDL to Redstone Compiler
-          description: Compile a hardware description language logic circuit to a working 3D 'redstone' implementation for the Minecraft computer game.
+          description: Compile a hardware description language logic 
+              circuit to a working 3D 'redstone' implementation for 
+              the Minecraft computer game.
           skills:
                 - Scala
                 - ANTLR 4 [?]
@@ -72,6 +75,9 @@ skills:
 experience:
         - title: Junior Design Engineer
           employeer: Tait Communications
+          duties:
+            - Thing
+            - Thin3
           duration:
                 start: Nov 2017
                 end: Feb 2018
@@ -83,14 +89,19 @@ experience:
                 end: May 2017
 
 education:
-        - degree: Bachelor of Computer Engineering with Honours
-          provider: University of Canterbury
+        - provider: University of Canterbury
           city: Christchurch
           country: New Zealand
           duration:
-                start: Feb 2015
-                finish: Nov 2019
-          gpa: 6.67
+            start: 2015
+            finish: 2018
+          degrees:
+            - Bachelor of Computer Engineering (with Honours)
+            - Minor in Networking Engineering
+          gpa: 
+            graduation: 6.67
+            cumulative: 3.94
+            max: 9.0
 
 interests:
         - Photography

@@ -34,8 +34,9 @@ ul {
     "head head head"
     "pro pro skl"
     "pro pro skl"
-    "exp exp exp"
-    "int edu edu";
+    "pro pro skl"
+    "space edu edu"
+    "exp exp exp";
 }
 
 #header {
@@ -132,6 +133,7 @@ ul {
   }
 
   .project {
+    margin-bottom: 15px;
     .title {
       margin: 0;
     }
@@ -146,7 +148,6 @@ ul {
   }
   
   grid-area: pro;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
@@ -154,6 +155,7 @@ ul {
 }
 
 #interests {
+  display: none;
   grid-area: int;
   z-index: 1;
 }
