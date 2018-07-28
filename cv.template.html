@@ -53,12 +53,14 @@
         <h2 class="section-title">
           Skills
         </h2>
-        <ul id="skills-content">
+        <div id="skills-content">
       {{#skills}}
-          <li>{{name}}</li>
+          <div class="skill">
+          <h3>{{name}}</h3>
           <p>{{ more }}</p>
+          </div>
       {{/skills}} 
-        </ul>
+        </div>
       </div>
 
       <div class="section" id="projects">

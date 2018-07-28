@@ -1,5 +1,6 @@
 html {
   background-color: lightgray;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 ul {
@@ -124,6 +125,15 @@ ul {
 
 #skills.section {
   grid-area: skl;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
 }
 
 #projects.section {

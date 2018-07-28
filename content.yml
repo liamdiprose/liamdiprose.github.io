@@ -7,48 +7,56 @@ contact:
 
 projects:
 
-        - title: University Website File Scrapper
+        - title: University File Scrapper
           description: Script downloads all course files, such as lecture notes to a local directory. Shared on GitHub with active users.
           skills:
                 - Python 3
                 - Open Source Colabouration
 
-        - title: Computer Vision Cow Tracking Research
+        - title: Cow Tracking Research
           description: Research project investigating the use of a deep learning framework for tracking cows.
           skills:
                 - Python + OpenCV
                 - Tensorflow
                 - Amazon Web Services
 
-        - title: Toy Helicopter Control System
-          description: Realtime Embedded PID controller for a remote control helicopter.
+        - title: Toy Helicopter Control
+          description: Realtime Embedded PID control system for a remote control helicopter.
           skills:
                 - Embedded Software Development
                 - C
                 - ARM Microcontrollers
 
-        - title: Dairy Farm IoT Platform
-          description: Sensor data storage and presentation for dairy farms.
+        # - title: Dairy Farm IoT Platform
+        #   description: Sensor data storage and presentation for dairy farms.
+        #   skills:
+        #         - Rust
+        #         - Vue.js
+        #         - d3.js
+        - title: Sheep Tracking
+          description: As my Engineering Honours project, I developed a software thing with
+            signal processing.
           skills:
-                - Rust
-                - Vue.js
-                - d3.js
+            - Python (SQLAlchemy + Swagger + Flask)
+            - PostgreSQL
+            - Microservice Architecture
+            - Ansible 
 
-        - title: Quick Network Gateway Switcher
+        - title: Gateway Switcher
           description: Quickly switch between two network gateways by double clicking a system tray icon.
           skills:
                 - C++ / Qt
                 - Cross Platform Development
                 - Route Table Networking
 
-        - title: Responsive Resume Layout 
+        - title: Responsive Resume 
           description: Developed this resume as a responsive layout with modern HTML and CSS.
           skills:
                 - CSS Grid
                 - CSS Flexbox
                 - Webpack
 
-        - title: VHDL to Redstone Compiler
+        - title: Redstone Compiler
           description: Compile a hardware description language logic 
               circuit to a working 3D 'redstone' implementation for 
               the Minecraft computer game.
@@ -67,7 +75,7 @@ skills:
         - name: System Level Design
         - name: Computer Networking
         - name: Programming Competition
-          more: 4th in New Zealand <programming competition
+          more: 4th in New Zealand <programming competition>
         - name: User Experience?
         - name: Master Searchbar User
         
