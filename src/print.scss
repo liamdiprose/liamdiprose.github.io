@@ -1,20 +1,30 @@
-html {
-    background-color: white;
-    width: 210mm;
-    height: 297mm;
+body {
+    background-color: none;
+    margin: 0;
 }
 
 @page {
     /** Margin and Padding is 
     handled by another div */
-    margin: 0;
+    margin: 7mm;
     padding: 0;
 }
 
-.no-print {
-    display: none;
+#page-container {
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right:0;
+    height: 100%;
+    width: 100%;
 }
 
-.page-container {
+#page-container {
     box-shadow: none;
+    margin: 0;
 }
+
+// .a4-paper {
+//     height: 100%;
+//     width: 100%;
+// }

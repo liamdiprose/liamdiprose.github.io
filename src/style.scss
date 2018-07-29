@@ -11,27 +11,23 @@ ul {
 }
 
 
-@page {
-  // box-shadow: 0 0 0;
-  width: 210mm;
+// @page {
+  // width: 210mm;
+// }
 
-  .page-container {
-    // box-shadow: none;
-  }
-
-}
-
-.page-container {
+.a4-paper {
   height: 297mm;
   width: 210mm;
-  margin: auto;
+  margin: 7mm;
+}
+
+.paper {
   box-shadow: 2mm 4mm 1mm gray;  /* TODO: media query, and not for @page */
-  padding: 7mm;
+  margin: auto;
   background-color: white;
 }
 
 #page-content {
-  // max-width: 210mm - (2 * 7mm);
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,7 +64,6 @@ ul {
     margin: 0;
     font-size: 18pt;
   }
-  // margin: 0;
   flex-grow: 1;
 }
 
@@ -78,12 +73,9 @@ ul {
 }
 
 #contact-details-content {
-  // margin: auto;
   display: inline-block;
-  // vertical-align: 50%;
   box-sizing: border-box;
   top: 50%;
-  // position: absolute;
   
   .contact-item {
     display: table;
@@ -107,40 +99,26 @@ section {
   .section-title {
     margin-top: 0;
     margin-bottom: 5pt;
-    // padding: 0;
-    // padding-top: 1pt;
   }
 }
 
-// .section:before {
-  // content: '';
-  // background-color: black;
-  // height: 5pt;
-  // width: 100%;
-  // position: absolute;
-// }
-
-// .section-flourish {
-  // background: black;
-  // height: 5pt;
-  // width: 100%;
-  // display: none;
-// }
-
 section {
-  .section-title::before {
+  h2.title::before {
       content: " ";
       height: 5pt;
       width: 100%;
       background-color: black;
       display: block;
+      margin-bottom: 3pt;
     }
+
+  h2.title {
+    margin-top: 0pt;
+    margin-bottom: 7pt;
+    text-transform: uppercase;
+  }
 }
 
-.section-title {
-  margin-top: 15pt;
-  text-transform: uppercase;
-}
 
 section#skills {
   grid-area: skl;
@@ -163,14 +141,11 @@ section#projects {
 
   .project {
     margin-bottom: 15px;
-    .title {
+    h3.title {
       margin: 0;
     }
-    .description {
+    p.description {
       margin: 0;
-    }
-
-    p{
       word-wrap: break-word;
     }
   }
@@ -184,7 +159,6 @@ section#projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
-  // grid-gap: 5pt;
   grid-column-gap: 10pt;
 }
 
@@ -208,17 +182,11 @@ section#education {
     margin: 0;
     padding: 0;
   }
-
-  .education-logo {
-
-    width: 60px;
-  }
-
 }
 
 section#experience {
   grid-area: exp;
-  .experience-placements {
+  .placements {
     display: flex;
     flex-direction: row;
   }
