@@ -1,6 +1,7 @@
 html {
   background-color: lightgray;
   font-family: Tahoma, Geneva, sans-serif;
+  font-size: 13pt;
 }
 
 ul {
@@ -11,8 +12,13 @@ ul {
 
 
 @page {
-  box-shadow: 0 0 0;
+  // box-shadow: 0 0 0;
   width: 210mm;
+
+  .page-container {
+    // box-shadow: none;
+  }
+
 }
 
 .page-container {
@@ -43,6 +49,7 @@ ul {
 #header {
   grid-area: head;
 
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -55,7 +62,7 @@ ul {
 #header-title {
   #name-title {
     font-variant: small-caps;
-    font-size: 32pt;
+    font-size: 45pt;
     margin-top: 0;
     margin-bottom: 0pt;
   }
@@ -68,6 +75,7 @@ ul {
 
 #contact-details {
   margin: auto;
+  font-size: 15pt;
 }
 
 #contact-details-content {
@@ -113,9 +121,10 @@ ul {
 // }
 
 .section-flourish {
-  background-color: black;
+  background: black;
   height: 5pt;
   width: 100%;
+  display: block;
 }
 
 .section-title {
