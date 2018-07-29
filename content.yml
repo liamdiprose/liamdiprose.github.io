@@ -82,7 +82,7 @@ skills:
 
 experience:
         - title: Junior Design Engineer
-          employeer: Tait Communications
+          employer: Tait Communications
           duties:
             - Thing
             - Thin3
@@ -91,7 +91,7 @@ experience:
                 end: Feb 2018
         
         - title: Software Developer
-          employeer: AgSense NZ
+          employer: AgSense NZ
           duration:
                 start: Nov 2016
                 end: May 2017
