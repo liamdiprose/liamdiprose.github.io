@@ -1,7 +1,7 @@
 html {
   background-color: lightgray;
   font-family: Tahoma, Geneva, sans-serif;
-  font-size: 13pt;
+  // font-size: 13pt;
 }
 
 ul {
@@ -49,14 +49,12 @@ ul {
 #header {
   grid-area: head;
 
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0pt;
   padding-bottom: 12pt;
-
 }
 
 #header-title {
@@ -68,6 +66,7 @@ ul {
   }
   #name-subtitle {
     margin: 0;
+    font-size: 18pt;
   }
   // margin: 0;
   flex-grow: 1;
@@ -88,6 +87,7 @@ ul {
   
   .contact-item {
     display: table;
+    padding-bottom: 3pt;
     
     .item-title {
       font-weight: bold;
@@ -103,12 +103,12 @@ ul {
   }
 }
 
-.section {
+section {
   .section-title {
     margin-top: 0;
     margin-bottom: 5pt;
-    padding: 0;
-    padding-top: 1pt;
+    // padding: 0;
+    // padding-top: 1pt;
   }
 }
 
@@ -120,19 +120,29 @@ ul {
   // position: absolute;
 // }
 
-.section-flourish {
-  background: black;
-  height: 5pt;
-  width: 100%;
-  display: block;
+// .section-flourish {
+  // background: black;
+  // height: 5pt;
+  // width: 100%;
+  // display: none;
+// }
+
+section {
+  .section-title::before {
+      content: " ";
+      height: 5pt;
+      width: 100%;
+      background-color: black;
+      display: block;
+    }
 }
 
 .section-title {
-  padding-top: 10px;
+  margin-top: 15pt;
   text-transform: uppercase;
 }
 
-#skills.section {
+section#skills {
   grid-area: skl;
 
   h3 {
@@ -145,7 +155,7 @@ ul {
   }
 }
 
-#projects.section {
+section#projects {
   #projects-title {
     display: inline-block;
     grid-column: 1 / -1;
@@ -159,6 +169,10 @@ ul {
     .description {
       margin: 0;
     }
+
+    p{
+      word-wrap: break-word;
+    }
   }
 
   ul {
@@ -170,23 +184,24 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
-  grid-gap: 5pt;
+  // grid-gap: 5pt;
+  grid-column-gap: 10pt;
 }
 
-// Block out space used by education block
-#projects.section::after {
+// Fill space used by education block
+section#projects::after {
   content: "";
   grid-column: 1;
   grid-row: 5;
 }
 
-#interests {
+section#interests {
   display: none;
   grid-area: int;
   z-index: 1;
 }
 
-#education {
+section#education {
   grid-area: edu;
 
   h3,h4,h5 {
@@ -201,7 +216,7 @@ ul {
 
 }
 
-#experience.section {
+section#experience {
   grid-area: exp;
   .experience-placements {
     display: flex;
@@ -213,5 +228,8 @@ ul {
       padding: 0;
     }
     margin-right: 5pt;
+  }
+  ul {
+    margin-top: 5px;
   }
 }
