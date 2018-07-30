@@ -4,27 +4,20 @@ body {
 }
 
 @page {
-    /** Margin and Padding is 
-    handled by another div */
     margin: 7mm;
-    padding: 0;
-}
-
-#page-container {
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right:0;
-    height: 100%;
-    width: 100%;
 }
 
 #page-container {
     box-shadow: none;
     margin: 0;
+    padding: 0;
+
+    height: auto;
+    width: auto;
 }
 
-// .a4-paper {
-//     height: 100%;
-//     width: 100%;
-// }
+.a4-paper {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}

@@ -1,7 +1,13 @@
+@import "reset";
+
 html {
   background-color: lightgray;
-  font-family: Tahoma, Geneva, sans-serif;
-  // font-size: 13pt;
+}
+
+body {
+  margin: 1em;
+  font-family: 'Roboto', 'DejaVu Serif Bold', Tahoma, Geneva, sans-serif;
+  font-size: 13pt;
 }
 
 ul {
@@ -10,13 +16,35 @@ ul {
   list-style-position: inside;
 }
 
+h1 {
+  font-weight: bold;
+  font-family: 'Overpass';
+  font-size: 32pt;
+}
 
-// @page {
-  // width: 210mm;
-// }
+h2 {
+  font-weight: bold;
+  font-family: 'Overpass';
+  font-size: 22pt;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: 'Overpass';
+  font-size: 15pt;
+  margin: 2pt;
+}
+
+p {
+  margin-bottom: 12pt;
+  word-wrap: break-word;
+  line-height: 120%;
+}
+
 
 .a4-paper {
   height: 297mm;
+
   width: 210mm;
   padding: 7mm;
 }
@@ -58,11 +86,12 @@ ul {
     font-variant: small-caps;
     font-size: 45pt;
     margin-top: 0;
-    margin-bottom: 0pt;
+    // margin-bottom: 0pt;
   }
   #name-subtitle {
     margin: 0;
     font-size: 18pt;
+    font-family: 'Roboto'
   }
   flex-grow: 1;
 }
@@ -143,6 +172,7 @@ section#projects {
     margin-bottom: 15px;
     h3.title {
       margin: 0;
+      margin-bottom: 3pt;
     }
     p.description {
       margin: 0;
