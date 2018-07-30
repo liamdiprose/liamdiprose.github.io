@@ -60,14 +60,14 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto repeat(5, 1fr);
-  column-gap: 12pt;
+  grid-gap: 12pt;
   grid-template-areas: 
     "head head head"
     "skl pro pro"
     "skl pro pro"
     "skl pro pro"
-    "edu edu  . "
-    "exp exp exp";
+    "exp pro pro"
+    "exp edu edu";
 }
 
 #header {
@@ -129,6 +129,7 @@ section {
     margin-top: 0;
     margin-bottom: 5pt;
   }
+  background-color: lightgoldenrodyellow;
 }
 
 section {
@@ -193,11 +194,11 @@ section#projects {
 }
 
 // Fill space used by education block
-section#projects::after {
-  content: "";
-  grid-column: 1;
-  grid-row: 5;
-}
+// section#projects::after {
+  // content: "";
+  // grid-column: 1;
+  // grid-row: 5;
+// }
 
 section#interests {
   display: none;
@@ -218,7 +219,7 @@ section#experience {
   grid-area: exp;
   .placements {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .placement {
     h3, h4, h5 {
