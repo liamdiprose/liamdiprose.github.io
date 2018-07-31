@@ -1,0 +1,23 @@
+body {
+  background-color: none;
+  margin: 0;
+}
+
+@page {
+  margin: 7mm;
+}
+#page-container {
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+.a4-paper {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+/*# sourceMappingURL=print.css.map */

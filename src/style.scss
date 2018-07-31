@@ -14,6 +14,8 @@ ul {
   list-style-type: square;
   padding-left: 2px;
   list-style-position: inside;
+  // margin-bottom: 2pt;
+  margin: 2pt;
 }
 
 h1 {
@@ -33,6 +35,10 @@ h3 {
   font-family: 'Overpass';
   font-size: 15pt;
   margin: 2pt;
+}
+
+h4 {
+  font-size: 14pt;
 }
 
 p {
@@ -79,11 +85,13 @@ p {
   justify-content: space-between;
   margin: 0pt;
   padding-bottom: 12pt;
+  background-color: white;
 }
 
 #header-title {
   #name-title {
     font-variant: small-caps;
+    // text-transform: uppercase;
     font-size: 45pt;
     margin-top: 0;
     // margin-bottom: 0pt;
@@ -109,12 +117,17 @@ p {
   .contact-item {
     display: table;
     padding-bottom: 3pt;
+
+    i {
+      padding-right: 5pt;
+    }
     
     .item-title {
       font-weight: bold;
       width: 60pt;
       text-align: right;
       padding-right: 5pt;
+      display: none;
     }
     
     .item-value {
@@ -125,21 +138,24 @@ p {
 }
 
 section {
-  .section-title {
-    margin-top: 0;
-    margin-bottom: 5pt;
+  .title {
+    margin-top: 3pt;
+    margin-bottom: 3pt;
+    // margin-left: -5pt;
   }
-  background-color: lightgoldenrodyellow;
+  background-color: whitesmoke;
+  padding-left: 3pt;
 }
 
 section {
   h2.title::before {
       content: " ";
       height: 5pt;
-      width: 100%;
+      width: auto;
       background-color: black;
       display: block;
-      margin-bottom: 3pt;
+      margin-bottom: 5pt;
+      margin-left: -3pt;
     }
 
   h2.title {
@@ -226,7 +242,8 @@ section#experience {
       margin: 0;
       padding: 0;
     }
-    margin-right: 5pt;
+    // margin-right: 5pt;
+    margin-bottom: 2em;
   }
   ul {
     margin-top: 5px;

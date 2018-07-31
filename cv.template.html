@@ -3,6 +3,7 @@
 <head>
   <title>{{ name }} Resume</title>
   <link href="https://fonts.googleapis.com/css?family=Overpass|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css" media="screen,print">
   <link rel="stylesheet" href="./print.css" media="print">
 </head>
@@ -22,6 +23,7 @@
         <div id="contact-details">
           <div id="contact-details-content">
             <div class="contact-item" id="phone">
+              <i class="fas fa-phone"></i>
               <div class="item-title">
                 Phone
               </div>
@@ -30,19 +32,25 @@
               </div>
             </div>
             <div class="contact-item" id="email">
+              <i class="fas fa-envelope"></i>
               <div class="item-title">
                 Email
               </div>
               <div class="item-value">
+                <a href="mailto:{{contact.email}}">
                 {{ contact.email }}
+                </a>
               </div>
             </div>
             <div class="contact-item" id="github">
+              <i class="fab fa-github"></i>
               <div class="item-title">
                 GitHub
               </div>
               <div class="item-value">
+                <a href="https://www.github.com/{{contact.github}}">
                 {{ contact.github }}
+                </a>
                 <!-- TODO: Hyperlink -->
               </div>
             </div>

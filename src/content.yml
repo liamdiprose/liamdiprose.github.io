@@ -27,12 +27,12 @@ projects:
                 - C
                 - ARM Microcontrollers
 
-        # - title: Dairy Farm IoT Platform
-        #   description: Sensor data storage and presentation for dairy farms.
-        #   skills:
-        #         - Rust
-        #         - Vue.js
-        #         - d3.js
+        - title: Dairy Farm IoT Platform
+          description: Sensor data storage and presentation for dairy farms.
+          skills:
+                - Rust
+                - Vue.js
+                - d3.js
         - title: Sheep Tracking
           description: As my Engineering Honours project, I developed a software thing with
             signal processing.

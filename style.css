@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  background-color: lightgray;
+}
+
+body {
+  margin: 1em;
+  font-family: "Roboto", "DejaVu Serif Bold", Tahoma, Geneva, sans-serif;
+  font-size: 13pt;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 2px;
+  list-style-position: inside;
+  margin: 2pt;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Overpass";
+  font-size: 32pt;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: "Overpass";
+  font-size: 22pt;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: "Overpass";
+  font-size: 15pt;
+  margin: 2pt;
+}
+
+h4 {
+  font-size: 14pt;
+}
+
+p {
+  margin-bottom: 12pt;
+  word-wrap: break-word;
+  line-height: 120%;
+}
+
+.a4-paper {
+  height: 297mm;
+  width: 210mm;
+  padding: 7mm;
+}
+
+.paper {
+  box-shadow: 2mm 4mm 1mm gray;
+  /* TODO: media query, and not for @page */
+  margin: auto;
+  background-color: white;
+}
+
+#page-content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(5, 1fr);
+  grid-gap: 12pt;
+  grid-template-areas: "head head head" "skl pro pro" "skl pro pro" "skl pro pro" "exp pro pro" "exp edu edu";
+}
+
+#header {
+  grid-area: head;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0pt;
+  padding-bottom: 12pt;
+  background-color: white;
+}
+
+#header-title {
+  flex-grow: 1;
+}
+#header-title #name-title {
+  font-variant: small-caps;
+  font-size: 45pt;
+  margin-top: 0;
+}
+#header-title #name-subtitle {
+  margin: 0;
+  font-size: 18pt;
+  font-family: "Roboto";
+}
+
+#contact-details {
+  margin: auto;
+  font-size: 15pt;
+}
+
+#contact-details-content {
+  display: inline-block;
+  box-sizing: border-box;
+  top: 50%;
+}
+#contact-details-content .contact-item {
+  display: table;
+  padding-bottom: 3pt;
+}
+#contact-details-content .contact-item i {
+  padding-right: 5pt;
+}
+#contact-details-content .contact-item .item-title {
+  font-weight: bold;
+  width: 60pt;
+  text-align: right;
+  padding-right: 5pt;
+  display: none;
+}
+#contact-details-content .contact-item .item-value {
+  display: table-cell;
+  text-align: right;
+}
+
+section {
+  background-color: whitesmoke;
+  padding-left: 3pt;
+}
+section .title {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
+}
+
+section h2.title::before {
+  content: " ";
+  height: 5pt;
+  width: auto;
+  background-color: black;
+  display: block;
+  margin-bottom: 5pt;
+  margin-left: -3pt;
+}
+section h2.title {
+  margin-top: 0pt;
+  margin-bottom: 7pt;
+  text-transform: uppercase;
+}
+
+section#skills {
+  grid-area: skl;
+}
+section#skills h3 {
+  margin: 0;
+  padding: 0;
+}
+section#skills p {
+  margin-top: 0;
+}
+
+section#projects {
+  grid-area: pro;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+  grid-column-gap: 10pt;
+}
+section#projects #projects-title {
+  display: inline-block;
+  grid-column: 1/-1;
+}
+section#projects .project {
+  margin-bottom: 15px;
+}
+section#projects .project h3.title {
+  margin: 0;
+  margin-bottom: 3pt;
+}
+section#projects .project p.description {
+  margin: 0;
+  word-wrap: break-word;
+}
+section#projects ul {
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+
+section#interests {
+  display: none;
+  grid-area: int;
+  z-index: 1;
+}
+
+section#education {
+  grid-area: edu;
+}
+section#education h3, section#education h4, section#education h5 {
+  margin: 0;
+  padding: 0;
+}
+
+section#experience {
+  grid-area: exp;
+}
+section#experience .placements {
+  display: flex;
+  flex-direction: column;
+}
+section#experience .placement {
+  margin-bottom: 2em;
+}
+section#experience .placement h3, section#experience .placement h4, section#experience .placement h5 {
+  margin: 0;
+  padding: 0;
+}
+section#experience ul {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
