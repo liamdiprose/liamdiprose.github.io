@@ -69,6 +69,16 @@ ul {
   margin: 2pt;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
 h1 {
   font-weight: bold;
   font-family: "Overpass";
@@ -135,7 +145,6 @@ p {
   flex-grow: 1;
 }
 #header-title #name-title {
-  font-variant: small-caps;
   font-size: 45pt;
   margin-top: 0;
 }
