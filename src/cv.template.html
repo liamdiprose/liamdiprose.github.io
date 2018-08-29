@@ -11,7 +11,7 @@
 <body>
   <div id="page-container" class="paper a4-paper">
     <div id="page-content">
-      <section id="header">
+      <header id="header">
         <div id="header-title">
           <h1 id="name-title">
             {{ name }}
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
       <section id="skills">
         <h2 class="title">
@@ -73,11 +73,9 @@
       </section>
 
       <section id="projects">
-        <div id="projects-title">
-          <h2 class="title">
-            Projects
-          </h2>
-        </div>
+        <h2 class="title">
+          Projects
+        </h2>
       {{#projects}} 
         <div class="project">
           <h3 class="title">
@@ -119,17 +117,6 @@
       {{/education}}
       </section>
       
-      <section id="interests">
-        <h2 class="title">
-          Interests
-        </h2>
-        <ul>
-      {{#interests}}
-          <li>{{ . }}</li>
-      {{/interests}}
-        </ul>
-      </section>
-
       <section id="experience">
         <h2 class="title">
           Experience

@@ -16,6 +16,7 @@ ul {
   list-style-position: inside;
   // margin-bottom: 2pt;
   margin: 2pt;
+  margin-top: 0;
 }
 
 a {
@@ -45,6 +46,7 @@ h3 {
   font-family: 'Overpass';
   font-size: 15pt;
   margin: 2pt;
+  margin-left: 0;
 }
 
 h4 {
@@ -52,7 +54,7 @@ h4 {
 }
 
 p {
-  margin-bottom: 12pt;
+  margin-bottom: 5pt;
   word-wrap: break-word;
   line-height: 120%;
 }
@@ -91,7 +93,7 @@ p {
     // "exp pro pro";
 }
 
-#header {
+header {
   grid-area: head;
 
   display: flex;
@@ -156,7 +158,6 @@ section {
   .title {
     margin-top: 3pt;
     margin-bottom: 3pt;
-    // margin-left: -5pt;
   }
   background-color: whitesmoke;
   padding-left: 3pt;
@@ -170,11 +171,10 @@ section {
       background-color: black;
       display: block;
       margin-bottom: 5pt;
-      margin-left: -3pt;
+      margin-left: -3pt;  // Undo padding of section
     }
 
   h2.title {
-    margin-top: 0pt;
     margin-bottom: 7pt;
     text-transform: uppercase;
   }
@@ -183,67 +183,29 @@ section {
 
 section#skills {
   grid-area: skl;
-
-  h3 {
-    margin: 0;
-    padding: 0;
-  }
-
-  p {
-    margin-top: 0;
+  .skill {
+    margin-bottom: 12pt;
   }
 }
 
 section#projects {
-  #projects-title {
-    display: inline-block;
-    grid-column: 1 / -1;
-  }
-
-  .project {
-    margin-bottom: 15px;
-    h3.title {
-      margin: 0;
-      margin-bottom: 3pt;
-    }
-    p.description {
-      margin: 0;
-      word-wrap: break-word;
-    }
-  }
-
-  ul {
-    margin-top: 2pt;
-    margin-bottom: 2pt;
-  }
-  
   grid-area: pro;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto repeat(3, 1fr);
   grid-column-gap: 10pt;
-}
 
-// Fill space used by education block
-// section#projects::after {
-  // content: "";
-  // grid-column: 1;
-  // grid-row: 5;
-// }
-
-section#interests {
-  display: none;
-  grid-area: int;
-  z-index: 1;
+  .title {
+    grid-column: 1 / -1;
+  }
+  .project {
+    margin-bottom: 15px;
+  }
 }
 
 section#education {
   grid-area: edu;
-
-  h3,h4,h5 {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 section#experience {
@@ -253,11 +215,6 @@ section#experience {
     flex-direction: column;
   }
   .placement {
-    h3, h4, h5 {
-      margin: 0;
-      padding: 0;
-    }
-    // margin-right: 5pt;
     margin-bottom: 2em;
   }
   ul {

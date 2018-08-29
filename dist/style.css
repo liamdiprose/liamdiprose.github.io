@@ -67,6 +67,7 @@ ul {
   padding-left: 2px;
   list-style-position: inside;
   margin: 2pt;
+  margin-top: 0;
 }
 
 a {
@@ -96,6 +97,7 @@ h3 {
   font-family: "Overpass";
   font-size: 15pt;
   margin: 2pt;
+  margin-left: 0;
 }
 
 h4 {
@@ -103,7 +105,7 @@ h4 {
 }
 
 p {
-  margin-bottom: 12pt;
+  margin-bottom: 5pt;
   word-wrap: break-word;
   line-height: 120%;
 }
@@ -130,7 +132,7 @@ p {
   grid-template-areas: "head head head" "skl pro pro" "skl pro pro" "skl pro pro" "exp pro pro" "exp edu edu";
 }
 
-#header {
+header {
   grid-area: head;
   display: flex;
   flex-direction: row;
@@ -202,7 +204,6 @@ section h2.title::before {
   margin-left: -3pt;
 }
 section h2.title {
-  margin-top: 0pt;
   margin-bottom: 7pt;
   text-transform: uppercase;
 }
@@ -210,12 +211,8 @@ section h2.title {
 section#skills {
   grid-area: skl;
 }
-section#skills h3 {
-  margin: 0;
-  padding: 0;
-}
-section#skills p {
-  margin-top: 0;
+section#skills .skill {
+  margin-bottom: 12pt;
 }
 
 section#projects {
@@ -225,38 +222,15 @@ section#projects {
   grid-template-rows: auto repeat(3, 1fr);
   grid-column-gap: 10pt;
 }
-section#projects #projects-title {
-  display: inline-block;
+section#projects .title {
   grid-column: 1/-1;
 }
 section#projects .project {
   margin-bottom: 15px;
 }
-section#projects .project h3.title {
-  margin: 0;
-  margin-bottom: 3pt;
-}
-section#projects .project p.description {
-  margin: 0;
-  word-wrap: break-word;
-}
-section#projects ul {
-  margin-top: 2pt;
-  margin-bottom: 2pt;
-}
-
-section#interests {
-  display: none;
-  grid-area: int;
-  z-index: 1;
-}
 
 section#education {
   grid-area: edu;
-}
-section#education h3, section#education h4, section#education h5 {
-  margin: 0;
-  padding: 0;
 }
 
 section#experience {
@@ -268,10 +242,6 @@ section#experience .placements {
 }
 section#experience .placement {
   margin-bottom: 2em;
-}
-section#experience .placement h3, section#experience .placement h4, section#experience .placement h5 {
-  margin: 0;
-  padding: 0;
 }
 section#experience ul {
   margin-top: 5px;
