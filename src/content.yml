@@ -8,56 +8,77 @@ contact:
 projects:
 
         - title: Toy Helicopter Controller
-          description: 
+          description: Remote control helicopter PID control system
           skills: 
+            - Embedded C
+            - ARM M4 Microcontroller
 
-        - title: Embedded Rust Microcontroller Support Crate
+        - title: Rust Microcontroller Support Crate
           description: 
           skills: 
+            - Rust
+            - GCC
 
         - title: Logic Circuit Simulator
           description: 
           skills: 
+            - C++
+            # Mention Graph Algorithm?
+
         - title: Inventory Management Backend
           description: 
           skills: 
-
-        - title: Inventory Management Andriod App
-          description: 
-          skills: 
+            - Scala (Sangria)
+            - GraphQL
+            - PostgreSQL
 
         - title: Inventory Management Android App
           description: 
           skills: 
+            - Kotlin (Android SDK)
+            - GraphQL (Apollo Client)
+
+        - title: Python File Scraper
+          description: Downloads files off university course website.
+          skills: 
+            - Python (Requests)
+            - JSON-API Client
 
         - title: Gateway Switcher
           description: Quickly switch between two network gateways by double clicking a system tray icon.
           skills:
-                - C++ / Qt
+                - C++ (Qt)
                 - Cross Platform Development
                 - Route Table Networking
 
         - title: Resume 
           description: Developed this resume as a responsive layout with modern HTML and CSS.
           skills:
+                - SASS
                 - CSS Grid
-                - CSS Flexbox
                 - Webpack
 
 skills:
         - name: Linux Adminstration
           more: Having a desktop with Arch
+
         - name: Written and Oral Communication
           more: Doing heaps or reports for university
+
         - name: Version Control
+
         - name: Debian Package Creation
+
         - name: System Level Design
+
         - name: Computer Networking
+
         - name: Programming Competition
           more: 4th in New Zealand <programming competition>
+
         - name: User Experience?
+
         - name: Master Searchbar User
-        
 
 experience:
         - title: Junior Design Engineer
