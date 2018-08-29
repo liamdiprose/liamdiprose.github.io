@@ -101,8 +101,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0pt;
-  padding-bottom: 12pt;
-  background-color: white;
 }
 
 #header-title {
@@ -172,6 +170,7 @@ section {
       display: block;
       margin-bottom: 5pt;
       margin-left: -3pt;  // Undo padding of section
+      margin-top: -4px;
     }
 
   h2.title {
