@@ -139,8 +139,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0pt;
-  padding-bottom: 12pt;
-  background-color: white;
 }
 
 #header-title {
@@ -202,6 +200,7 @@ section h2.title::before {
   display: block;
   margin-bottom: 5pt;
   margin-left: -3pt;
+  margin-top: -4px;
 }
 section h2.title {
   margin-bottom: 7pt;
