@@ -52,6 +52,32 @@ table {
   border-spacing: 0;
 }
 
+sub, sup {
+  /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+  font-size: 75%;
+  /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+  line-height: 0;
+  /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+  position: relative;
+  /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+
 html {
   background-color: lightgray;
 }
@@ -59,14 +85,14 @@ html {
 body {
   margin: 1em;
   font-family: "Roboto", "DejaVu Serif Bold", Tahoma, Geneva, sans-serif;
-  font-size: 13pt;
 }
 
 ul {
   list-style-type: square;
   padding-left: 2px;
-  list-style-position: inside;
-  margin: 2pt;
+  list-style-position: outside;
+  margin-left: 12pt;
+  margin-bottom: 2pt;
   margin-top: 0;
 }
 
@@ -126,7 +152,7 @@ p {
 #page-content {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.2fr 1fr 1fr;
   grid-template-rows: auto repeat(5, 1fr);
   grid-gap: 12pt;
   grid-template-areas: "head head head" "skl pro pro" "skl pro pro" "skl pro pro" "exp pro pro" "exp edu edu";
