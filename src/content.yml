@@ -6,92 +6,109 @@ contact:
         github: liamdiprose
 
 projects:
-
         - title: Toy Helicopter Controller
-          description: Remote control helicopter PID control system
+          description: Keeps a remote-control helicopter steady
           skills: 
             - Embedded C
-            - ARM M4 Microcontroller
+            - ARM Microcontrollers
+            - PID Control Systems
 
-        - title: Rust Microcontroller Support Crate
-          description: 
+        - title: Microcontroller Support Library
+          description: Wraps microcontroller register-level control in
+                      an idomatic Rust API
           skills: 
             - Rust
-            - GCC
+            - API Design
 
         - title: Logic Circuit Simulator
-          description: 
+          description: Simulates a logic circuit such as a full-adder
           skills: 
             - C++
-            # Mention Graph Algorithm?
+            - CMake
+            - Dependency Graph Resolution
 
-        - title: Inventory Management Backend
-          description: 
+        - title: Inventory Tracking Backend
+          description: Helps university clubs keep track of their stuff
           skills: 
             - Scala (Sangria)
             - GraphQL
             - PostgreSQL
 
-        - title: Inventory Management Android App
-          description: 
+        - title: Inventory Tracking Android App
+          completed: false
+          description: Native android frontend for the inventory tracker
           skills: 
             - Kotlin (Android SDK)
             - GraphQL (Apollo Client)
 
         - title: Python File Scraper
-          description: Downloads files off university course website.
+          description: Downloads files off a university course website
           skills: 
             - Python (Requests)
-            - JSON-API Client
+            - Restful API Client
 
         - title: Gateway Switcher
-          description: Quickly switch between two network gateways by double clicking a system tray icon.
+          description: Quickly switch between two network gateways 
+                       by double clicking a system tray icon
           skills:
                 - C++ (Qt)
-                - Cross Platform Development
+                - Cross Platform Dev
                 - Route Table Networking
 
-        - title: Resume 
-          description: Developed this resume as a responsive layout with modern HTML and CSS.
+        - title: Web Resume 
+          description: This resume was created with HTML and CSS
           skills:
                 - SASS
                 - CSS Grid
-                - Webpack
+                - Mustache Template
 
 skills:
-        - name: Linux Adminstration
-          more: Having a desktop with Arch
+  - name: Linux
+    more: Daily user for 3 years. 
 
-        - name: Written and Oral Communication
-          more: Doing heaps or reports for university
+  - name: DevOps
+    more: Git, Configuration Management, Software Packing, Deployment
 
-        - name: Version Control
+  - name: Computer Networking
+    more: Set up the network for university LAN parties
 
-        - name: Debian Package Creation
+  - name: Professional Communication
+    more: Concisely communicates with other engineers and clients 
+          through writing and in-person.
 
-        - name: System Level Design
+  - name: Competitive Programming
+    more: Using algorithms to solve programming challenges. 
+          Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
 
-        - name: Computer Networking
+  - name: Functional Languages
+    more: Enthusastic learning new languge design ideas.
 
-        - name: Programming Competition
-          more: 4th in New Zealand <programming competition>
+  - name: Team Leadership
+    more: Team lead for engineering honours project. Attended teamwork 
+          development course aboard the Spirt of New Zealand
 
-        - name: User Experience?
+  - name: UX Design
+    more: Some sort of proof for my pretty artworks?
 
-        - name: Master Searchbar User
 
 experience:
         - title: Junior Design Engineer
           employer: Tait Communications
           duties:
-            - Thing
-            - Thin3
+            - Configuration Management (Ansible)
+            - Lua Development
+            - Embedded Linux 
+            - Angular Framework
           duration:
                 start: Nov 2017
                 end: Feb 2018
         
         - title: Software Developer
           employer: AgSense NZ
+          duties:
+            - Node.js
+            - Code Refactoring 
+            - Software Packaging
           duration:
                 start: Nov 2016
                 end: May 2017
@@ -110,8 +127,3 @@ education:
             graduation: 6.67
             cumulative: 3.94
             max: 9.0
-
-interests:
-        - Photography
-        - Tramping
-        - Design
