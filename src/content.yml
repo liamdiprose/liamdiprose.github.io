@@ -69,8 +69,8 @@ skills:
   - name: DevOps
     more: Git, Configuration Management, Software Packing, Deployment
 
-  - name: Computer Networking
-    more: Set up the network for university LAN parties
+  # - name: Computer Networking
+  #   more: Set up the network for university LAN parties
 
   - name: Professional Communication
     more: Concisely communicates with other engineers and clients 
@@ -78,14 +78,15 @@ skills:
 
   - name: Competitive Programming
     more: Using algorithms to solve programming challenges. 
-          Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
+          #Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
 
-  - name: Functional Languages
-    more: Enthusastic learning new languge design ideas.
+  - name: Very nice code
+    more: Enthusastic learning new languge design ideas, problem solving with code, 
+          readability. Name drop functional design.
 
   - name: Team Leadership
-    more: Team lead for engineering honours project. Attended teamwork 
-          development course aboard the Spirt of New Zealand
+    more: Team lead for engineering honours project. #Attended teamwork 
+          #development course aboard the Spirt of New Zealand
 
   - name: UX Design
     more: Some sort of proof for my pretty artworks?
