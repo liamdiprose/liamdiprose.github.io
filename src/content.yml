@@ -55,6 +55,13 @@ projects:
                 - QMake
                 - Route Table Networking
 
+        - title: Sheep Tracking System
+          description: Tracks sheep locations with radio time-of-travel and triangulation
+          skills:
+            - Python (OpenAPI)
+            - Vue.js
+            - Test Driven Development
+
         # - title: Web Resume 
         #   description: This resume was created with HTML and CSS
         #   skills:
@@ -63,34 +70,45 @@ projects:
         #         - Mustache Template
 
 skills:
-  - name: Linux
+  - name: Linux Administration
     more: Daily user for 3 years. 
 
   - name: DevOps
-    more: Git, Configuration Management, Software Packing, Deployment, AWS, Digital Ocean
+    more: Git, Configuration Management, Software Packaging, Deployment, AWS, Digital Ocean
 
   - name: Computer Networking
-    more: Set up the network for university LAN parties, Maintain OpenVPN, SSH forwarding
+    more: Set up the network for university LAN parties, Maintain OpenVPN, 
+
+  - name: Frontend Web Development
+    more: Angular and Vue.js Javascript Frameworks 
+          Designing data-driven web applications to deal with API changes
+    
+  - name: Backend Web Development
+    more: Node.js Express, Python Flask, Relational Databases, Nginx, Authentication Schemes
+
+  - name: Website UX
+    more: Layout and styling with CSS and Frameworks. visualistions with d3.js
+          UX prototyping with wireframes, Adobe Illustrator or Inkscape
 
   - name: Professional Communication
     more: Concisely communicates with other engineers and clients 
           through writing and in-person.
 
-  - name: Competitive Programming
+  - name: Algorithms and Datastructures
     more: Using algorithms to solve programming challenges. 
-          #Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
+          Computer Science flavoured engineering, name drop COSC401 Machine Learning
+          Algorithms and Datastructures
+          Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
 
-  - name: Very nice code
-    more: Enthusastic learning new languge design ideas, problem solving with code, 
-          readability. Name drop functional design.
+  - name: Clean Coding
+    more: Express solutioin in code clearly, minimise mistakes, expandable
 
-  - name: Team Leadership
-    more: Team lead for engineering honours project. #Attended teamwork 
-          #development course aboard the Spirt of New Zealand
+  - name: Functional Language Programming
+    more: Functional coposition, immutable data structures, type systems, provably correct programs
 
-  - name: UX Design
-    more: Some sort of proof for my pretty artworks?
-
+  - name: Professional Communication
+    more: Written and in-person communcation with client of industry-backed honours project. 
+          Developed a to-the-point writing voice during my degree.
 
 experience:
         - title: Junior Design Engineer
