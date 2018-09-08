@@ -81,10 +81,10 @@ p {
   grid-gap: 12pt;
   grid-template-areas: 
     "head head head"
-    "skl pro pro"
-    "skl pro pro"
-    "skl pro pro"
-    "exp pro pro"
+    "pro skl skl"
+    "pro skl skl"
+    "pro skl skl"
+    "exp skl skl"
     "exp edu edu";
     // "skl edu edu"
     // "skl pro pro"
@@ -190,14 +190,6 @@ section#skills {
 section#projects {
   grid-area: pro;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto repeat(3, 1fr);
-  grid-column-gap: 10pt;
-
-  .title {
-    grid-column: 1 / -1;
-  }
   .project {
     margin-bottom: 15px;
   }
