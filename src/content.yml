@@ -82,13 +82,15 @@ skills:
   - name: Frontend Web Development
     more: Angular and Vue.js Javascript Frameworks 
           Designing data-driven web applications to deal with API changes
+          Website layout and styling with CSS and CSS Frameworks
+          Visualisations with d3.js
     
   - name: Backend Web Development
     more: Node.js Express, Python Flask, Relational Databases, Nginx, Authentication Schemes
 
-  - name: Website UX
-    more: Layout and styling with CSS and Frameworks. visualistions with d3.js
-          UX prototyping with wireframes, Adobe Illustrator or Inkscape
+  # - name: Website UX
+  #   more: Layout and styling with CSS and Frameworks. visualistions with d3.js
+  #         UX prototyping with wireframes, Adobe Illustrator or Inkscape
 
   - name: Professional Communication
     more: Concisely communicates with other engineers and clients 
