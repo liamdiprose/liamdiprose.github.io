@@ -189,11 +189,16 @@ section#skills {
 
 section#projects {
   grid-area: pro;
-
-  .project {
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  .project-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
+
 
 section#education {
   grid-area: edu;

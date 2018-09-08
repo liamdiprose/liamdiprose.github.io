@@ -76,21 +76,23 @@
         <h2 class="title">
           Projects
         </h2>
-      {{#projects}} 
-        <div class="project">
-          <h3 class="title">
-            {{ title }}
-          </h3>
-          <p class="description">
-            {{ description }}
-          </p>
-          <ul class="project-tech">
-          {{#skills}} 
-            <li>{{.}}</li>
-          {{/skills}}
-          </ul>
+        <div class="project-list">
+        {{#projects}} 
+          <div class="project">
+            <h3 class="title">
+              {{ title }}
+            </h3>
+            <p class="description">
+              {{ description }}
+            </p>
+            <ul class="project-tech">
+            {{#skills}} 
+              <li>{{.}}</li>
+            {{/skills}}
+            </ul>
+          </div>
+        {{/projects}} 
         </div>
-      {{/projects}} 
       </section>
 
       <section id="education">
