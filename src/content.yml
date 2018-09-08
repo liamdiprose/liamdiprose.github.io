@@ -13,33 +13,33 @@ projects:
             - ARM Microcontrollers
             - PID Control Systems
 
-        - title: Microcontroller Support Library
-          description: Wraps microcontroller register-level control in
-                      an idomatic Rust API
-          skills: 
-            - Rust
-            - API Design
+        # - title: Microcontroller Support Library
+        #   description: Wraps microcontroller register-level control in
+        #               an idomatic Rust API
+        #   skills: 
+        #     - Rust
+        #     - API Design
 
-        - title: Logic Circuit Simulator
-          description: Simulates a logic circuit such as a full-adder
-          skills: 
-            - C++
-            - CMake
-            - Dependency Graph Resolution
+        # - title: Logic Circuit Simulator
+        #   description: Simulates a logic circuit such as a full-adder
+        #   skills: 
+        #     - C++
+        #     - CMake
+        #     - Dependency Graph Resolution
 
-        - title: Inventory Tracking Backend
-          description: Helps university clubs keep track of their stuff
-          skills: 
-            - Scala (Sangria)
-            - GraphQL
-            - PostgreSQL
+        # - title: Inventory Tracking Backend
+        #   description: Helps university clubs keep track of their stuff
+        #   skills: 
+        #     - Scala (Sangria)
+        #     - GraphQL
+        #     - PostgreSQL
 
-        - title: Inventory Tracking Android App
-          completed: false
-          description: Native android frontend for the inventory tracker
-          skills: 
-            - Kotlin (Android SDK)
-            - GraphQL (Apollo Client)
+        # - title: Inventory Tracking Android App
+        #   completed: false
+        #   description: Native android frontend for the inventory tracker
+        #   skills: 
+        #     - Kotlin (Android SDK)
+        #     - GraphQL (Apollo Client)
 
         - title: Python File Scraper
           description: Downloads files off a university course website
@@ -52,25 +52,25 @@ projects:
                        by double clicking a system tray icon
           skills:
                 - C++ (Qt)
-                - Cross Platform Dev
+                - QMake
                 - Route Table Networking
 
-        - title: Web Resume 
-          description: This resume was created with HTML and CSS
-          skills:
-                - SASS
-                - CSS Grid
-                - Mustache Template
+        # - title: Web Resume 
+        #   description: This resume was created with HTML and CSS
+        #   skills:
+        #         - SASS
+        #         - CSS Grid
+        #         - Mustache Template
 
 skills:
   - name: Linux
     more: Daily user for 3 years. 
 
   - name: DevOps
-    more: Git, Configuration Management, Software Packing, Deployment
+    more: Git, Configuration Management, Software Packing, Deployment, AWS, Digital Ocean
 
-  # - name: Computer Networking
-  #   more: Set up the network for university LAN parties
+  - name: Computer Networking
+    more: Set up the network for university LAN parties, Maintain OpenVPN, SSH forwarding
 
   - name: Professional Communication
     more: Concisely communicates with other engineers and clients 
