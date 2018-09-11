@@ -6,12 +6,34 @@ contact:
         github: liamdiprose
 
 projects:
+        - title: Sheep Tracking System
+          description: Tracks sheep locations with beacon time-of-arrival and triangulation
+          skills:
+            - Python (OpenAPI)
+            - Javascript (Vue.js, d3.js)
+            - Linux Configuration (systemd)
+            - Setup Automation (Ansible)
+
+        - title: Gateway Switcher
+          description: Quickly switch between two network gateways 
+                       from the system tray
+          skills:
+                - C++ (Qt)
+                - QMake
+                - Route Table Networking
+
         - title: Toy Helicopter Controller
-          description: Keeps a remote-control helicopter steady
+          description: Allows control of a remote-control helicopter while keeping it steady.
           skills: 
-            - Embedded C
+            - Real-time Embedded C
             - ARM Microcontrollers
-            - PID Control Systems
+            - Control Systems (PID)
+
+        - title: Python File Scraper
+          description: Downloads files off a university course website
+          skills: 
+            - Python (Requests)
+            - REST API
 
         # - title: Microcontroller Support Library
         #   description: Wraps microcontroller register-level control in
@@ -41,72 +63,44 @@ projects:
         #     - Kotlin (Android SDK)
         #     - GraphQL (Apollo Client)
 
-        - title: Python File Scraper
-          description: Downloads files off a university course website
-          skills: 
-            - Python (Requests)
-            - Restful API Client
-
-        - title: Gateway Switcher
-          description: Quickly switch between two network gateways 
-                       by double clicking a system tray icon
-          skills:
-                - C++ (Qt)
-                - QMake
-                - Route Table Networking
-
-        - title: Sheep Tracking System
-          description: Tracks sheep locations with radio time-of-travel and triangulation
-          skills:
-            - Python (OpenAPI)
-            - Vue.js
-            - Test Driven Development
-
-        # - title: Web Resume 
-        #   description: This resume was created with HTML and CSS
-        #   skills:
-        #         - SASS
-        #         - CSS Grid
-        #         - Mustache Template
-
 skills:
   - name: Linux Administration
-    more: Daily user for 3 years. 
+    more: Daily user for 3 years. Shell user, configuration,
 
   - name: DevOps
-    more: Git, Configuration Management, Software Packaging, Deployment, AWS, Digital Ocean
+    more: Git, Configuration Management, Software Packaging, 
+          Deployment, AWS, Digital Ocean VPS, Process Supervisors, 
+          Build Tools CMake, Make
 
   - name: Computer Networking
     more: Set up the network for university LAN parties, Maintain OpenVPN, 
 
   - name: Frontend Web Development
     more: Angular and Vue.js Javascript Frameworks 
-          Designing data-driven web applications to deal with API changes
+          Designing data-driven web applications with RxJS
           Website layout and styling with CSS and CSS Frameworks
           Visualisations with d3.js
+          Stores
     
   - name: Backend Web Development
     more: Node.js Express, Python Flask, Relational Databases, Nginx, Authentication Schemes
+          WebSockets RESTful servers, GraphQL
 
   # - name: Website UX
   #   more: Layout and styling with CSS and Frameworks. visualistions with d3.js
   #         UX prototyping with wireframes, Adobe Illustrator or Inkscape
 
-  - name: Professional Communication
-    more: Concisely communicates with other engineers and clients 
-          through writing and in-person.
-
   - name: Algorithms and Datastructures
-    more: Using algorithms to solve programming challenges. 
-          Computer Science flavoured engineering, name drop COSC401 Machine Learning
-          Algorithms and Datastructures
+    more: Computer Science flavoured engineering, 
+          Compeditive Programming Contests. 
           Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
 
   - name: Clean Coding
-    more: Express solutioin in code clearly, minimise mistakes, expandable
+    more: Express solution in code clearly, minimise mistakes, expandable
 
   - name: Functional Language Programming
-    more: Functional coposition, immutable data structures, type systems, provably correct programs
+    more: Functional coposition, immutable data structures, type systems, provably 
+          correct programs
 
   - name: Professional Communication
     more: Written and in-person communcation with client of industry-backed honours project. 
@@ -115,6 +109,8 @@ skills:
 experience:
         - title: Junior Design Engineer
           employer: Tait Communications
+          description: Robust Communcations Provider. Investigated methdos of 
+                       configuring networked embedded systems
           duties:
             - Configuration Management (Ansible)
             - Lua Development
@@ -126,10 +122,11 @@ experience:
         
         - title: Software Developer
           employer: AgSense NZ
+          description: Agricultural sensors Startup, rewriting early code, implementing elements for visual programming, investigated methods of deploying software updates
           duties:
             - Node.js
             - Code Refactoring 
-            - Software Packaging
+            - Software Packaging (Debian)
           duration:
                 start: Nov 2016
                 end: May 2017
