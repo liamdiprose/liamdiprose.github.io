@@ -155,7 +155,7 @@ p {
   grid-template-columns: 1.2fr 1fr 1fr;
   grid-template-rows: auto repeat(5, 1fr);
   grid-gap: 12pt;
-  grid-template-areas: "head head head" "skl pro pro" "skl pro pro" "skl pro pro" "exp pro pro" "exp edu edu";
+  grid-template-areas: "head head head" "pro skl skl" "pro skl skl" "pro skl skl" "exp skl skl" "exp edu edu";
 }
 
 header {
@@ -235,23 +235,27 @@ section h2.title {
 
 section#skills {
   grid-area: skl;
+  display: flex;
+  flex-direction: column;
 }
 section#skills .skill {
   margin-bottom: 12pt;
 }
+section#skills .skill-list {
+  height: 100%;
+  justify-content: space-between;
+}
 
 section#projects {
   grid-area: pro;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto repeat(3, 1fr);
-  grid-column-gap: 10pt;
+  display: flex;
+  flex-direction: column;
 }
-section#projects .title {
-  grid-column: 1/-1;
-}
-section#projects .project {
-  margin-bottom: 15px;
+section#projects .project-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 section#education {
