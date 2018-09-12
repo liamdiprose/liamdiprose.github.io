@@ -184,12 +184,11 @@ section#skills {
   grid-area: skl;
   display: flex;
   flex-direction: column;
-  .skill {
-    margin-bottom: 12pt;
-  }
 
   .skill-list {
     height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
