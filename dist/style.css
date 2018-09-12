@@ -261,6 +261,9 @@ section#projects .project-list {
 section#education {
   grid-area: edu;
 }
+section#education .education-provider, section#education .education-city {
+  display: inline;
+}
 
 section#experience {
   grid-area: exp;
