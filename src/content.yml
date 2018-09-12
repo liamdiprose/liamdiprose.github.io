@@ -7,33 +7,33 @@ contact:
 
 projects:
   - title: Sheep Tracking System
-    description: Tracks sheep locations with beacon time-of-arrival and triangulation
+    description: Tracks sheep locations with beacon time-of-arrival and triangulation. 
+                 Engineering Honours Project.
     skills:
       - Python (OpenAPI)
       - Web Development (Vue.js, d3.js)
       - Linux Configuration (systemd)
-      - Setup Automation (Ansible)
+      - Configuration Management (Ansible)
 
   - title: Gateway Switcher
-    description: Quickly switch between two network gateways 
-                 from the system tray
+    description: Quickly switch between two network gateways from the system tray.
     skills:
-          - C++ (Qt)
-          - QMake
-          - Route Table Networking
+      - C++ (Qt)
+      - QMake
+      - Route Table Networking
 
   - title: Toy Helicopter Controller
-    description: Allows control of a remote-control helicopter while keeping it steady.
+    description: Provides control of a remote-control helicopter while keeping it steady.
     skills: 
       - Real-time Embedded C
       - ARM Microcontrollers
       - Control Systems (PID)
 
-  - title: Python File Scraper
-    description: Downloads files off a university course website
+  - title: Course File Scraper
+    description: Downloads files off a university course website to a local folder.
     skills: 
       - Python (Requests)
-      - REST API
+      - Web Scraping
 
   # - title: Microcontroller Support Library
   #   description: Wraps microcontroller register-level control in
@@ -146,7 +146,7 @@ education:
           duration:
             start: 2015
             finish: 2018
-          courses:
+          themes:
             - Object-Oriented Software Design
             - Embedded Software
             - Computer Networking
