@@ -209,6 +209,10 @@ section#projects {
 
 section#education {
   grid-area: edu;
+
+  .education-provider, .education-city {
+    display: inline;
+  }
 }
 
 section#experience {
