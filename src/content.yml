@@ -6,75 +6,64 @@ contact:
         github: liamdiprose
 
 projects:
-        - title: Sheep Tracking System
-          description: Tracks sheep locations with beacon time-of-arrival and triangulation
-          skills:
-            - Python (OpenAPI)
-            - Javascript (Vue.js, d3.js)
-            - Linux Configuration (systemd)
-            - Setup Automation (Ansible)
+  - title: Sheep Tracking System
+    description: Tracks sheep locations with beacon time-of-arrival and triangulation
+    skills:
+      - Python (OpenAPI)
+      - Web Development (Vue.js, d3.js)
+      - Linux Configuration (systemd)
+      - Setup Automation (Ansible)
 
-        - title: Gateway Switcher
-          description: Quickly switch between two network gateways 
-                       from the system tray
-          skills:
-                - C++ (Qt)
-                - QMake
-                - Route Table Networking
+  - title: Gateway Switcher
+    description: Quickly switch between two network gateways 
+                 from the system tray
+    skills:
+          - C++ (Qt)
+          - QMake
+          - Route Table Networking
 
-        - title: Toy Helicopter Controller
-          description: Allows control of a remote-control helicopter while keeping it steady.
-          skills: 
-            - Real-time Embedded C
-            - ARM Microcontrollers
-            - Control Systems (PID)
+  - title: Toy Helicopter Controller
+    description: Allows control of a remote-control helicopter while keeping it steady.
+    skills: 
+      - Real-time Embedded C
+      - ARM Microcontrollers
+      - Control Systems (PID)
 
-        - title: Python File Scraper
-          description: Downloads files off a university course website
-          skills: 
-            - Python (Requests)
-            - REST API
+  - title: Python File Scraper
+    description: Downloads files off a university course website
+    skills: 
+      - Python (Requests)
+      - REST API
 
-        # - title: Microcontroller Support Library
-        #   description: Wraps microcontroller register-level control in
-        #               an idomatic Rust API
-        #   skills: 
-        #     - Rust
-        #     - API Design
+  # - title: Microcontroller Support Library
+  #   description: Wraps microcontroller register-level control in
+  #               an idomatic Rust API
+  #   skills: 
+  #     - Rust
+  #     - API Design
 
-        # - title: Logic Circuit Simulator
-        #   description: Simulates a logic circuit such as a full-adder
-        #   skills: 
-        #     - C++
-        #     - CMake
-        #     - Dependency Graph Resolution
+  # - title: Logic Circuit Simulator
+  #   description: Simulates a logic circuit such as a full-adder
+  #   skills: 
+  #     - C++
+  #     - CMake
+  #     - Dependency Graph Resolution
 
-        # - title: Inventory Tracking Backend
-        #   description: Helps university clubs keep track of their stuff
-        #   skills: 
-        #     - Scala (Sangria)
-        #     - GraphQL
-        #     - PostgreSQL
+  # - title: Inventory Tracking Backend
+  #   description: Helps university clubs keep track of their stuff
+  #   skills: 
+  #     - Scala (Sangria)
+  #     - GraphQL
+  #     - PostgreSQL
 
-        # - title: Inventory Tracking Android App
-        #   completed: false
-        #   description: Native android frontend for the inventory tracker
-        #   skills: 
-        #     - Kotlin (Android SDK)
-        #     - GraphQL (Apollo Client)
+  # - title: Inventory Tracking Android App
+  #   completed: false
+  #   description: Native android frontend for the inventory tracker
+  #   skills: 
+  #     - Kotlin (Android SDK)
+  #     - GraphQL (Apollo Client)
 
 skills:
-  - name: Linux Administration
-    more: Daily user for 3 years. Shell user, configuration,
-
-  - name: DevOps
-    more: Git, Configuration Management, Software Packaging, 
-          Deployment, AWS, Digital Ocean VPS, Process Supervisors, 
-          Build Tools CMake, Make
-
-  - name: Computer Networking
-    more: Set up the network for university LAN parties, Maintain OpenVPN, 
-
   - name: Frontend Web Development
     more: Angular and Vue.js Javascript Frameworks 
           Designing data-driven web applications with RxJS
@@ -95,52 +84,73 @@ skills:
           Compeditive Programming Contests. 
           Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
 
-  - name: Clean Coding
-    more: Express solution in code clearly, minimise mistakes, expandable
+    #Git, Configuration Management, Software Packaging, 
+          #Deployment, AWS, Digital Ocean VPS, Process Supervisors, 
+          #Build Tools CMake, Make
+  - name: DevOps
+    more: Proficent Git user. Make and CMake build automation. 
+          Configuration Mangement with Ansible. 
+          Experience using cloud VPS providers Amazon Web Services
 
-  - name: Functional Language Programming
-    more: Functional coposition, immutable data structures, type systems, provably 
-          correct programs
+  - name: Linux Administration
+    more: Daily user for 3 years. Shell user, configuration,Debian and Arch Linux package creation, 
+          systemd service files.
+
+  - name: Computer Networking
+    more: Set up the network for university LAN parties, Maintain personal VPN service
+    
+  - name: Clean Coding
+    more: Express intent in code clearly, minimise mistakes, expandable. Youtube videos?
+
+  - name: Functional Programming
+    more: Actively interested in Functional languages coposition, immutable data structures, 
+          type systems, provably correct programs
 
   - name: Professional Communication
     more: Written and in-person communcation with client of industry-backed honours project. 
           Developed a to-the-point writing voice during my degree.
 
 experience:
-        - title: Junior Design Engineer
-          employer: Tait Communications
-          description: Robust Communcations Provider. Investigated methdos of 
-                       configuring networked embedded systems
-          duties:
-            - Configuration Management (Ansible)
-            - Lua Development
-            - Embedded Linux 
-            - Angular Framework
-          duration:
-                start: Nov 2017
-                end: Feb 2018
-        
-        - title: Software Developer
-          employer: AgSense NZ
-          description: Agricultural sensors Startup, rewriting early code, implementing elements for visual programming, investigated methods of deploying software updates
-          duties:
-            - Node.js
-            - Code Refactoring 
-            - Software Packaging (Debian)
-          duration:
-                start: Nov 2016
-                end: May 2017
+  - title: Junior Design Engineer
+    employer: Tait Communications
+    description: Robust Communcations Provider. Investigated methdos of 
+                  configuring networked embedded systems
+    duties:
+      - Configuration Management
+      - Python
+      - Lua Development
+      - Embedded Linux 
+      - Angular Framework
+    duration:
+          start: Nov 2017
+          end: Feb 2018
+  
+  - title: Software Developer
+    employer: AgSense NZ
+    description: Agricultural sensors Startup, rewriting early code, implementing elements for visual programming, investigated methods of deploying software updates
+    duties:
+      - Node.js
+      - Code Refactoring 
+      - Software Packaging (Debian)
+    duration:
+          start: Nov 2016
+          end: May 2017
 
 education:
         - provider: University of Canterbury
+          degree: Bachelor of Computer Engineering (with Honours)
           city: Christchurch
           country: New Zealand
+          description: Halfway between software and eletrical engineering, computer engineering
+                       focuses on lower-level software for embedded and high-performance software.
           duration:
             start: 2015
             finish: 2018
-          degrees:
-            - Bachelor of Computer Engineering (with Honours)
-            - Minor in Networking Engineering
+          courses:
+            - Object-Oriented Software Design
+            - Embedded Software
+            - Computer Networking
+            - Electrical circuit design
           gpa: 
             graduation: 6.67
             cumulative: 3.94
