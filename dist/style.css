@@ -124,6 +124,7 @@ h3 {
   font-size: 15pt;
   margin: 2pt;
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -215,7 +216,6 @@ section {
 }
 section .title {
   margin-top: 3pt;
-  margin-bottom: 3pt;
 }
 
 section h2.title::before {
@@ -238,11 +238,10 @@ section#skills {
   display: flex;
   flex-direction: column;
 }
-section#skills .skill {
-  margin-bottom: 12pt;
-}
 section#skills .skill-list {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
