@@ -1,0 +1,24 @@
+{
+  "name": "liam-diprose-resume",
+  "version": "1.0.0",
+  "description": "Liam Diprose's Resume",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamdiprose/liamdiprose.github.io.git"
+  },
+  "author": "Liam Diprose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamdiprose/liamdiprose.github.io/issues"
+  },
+  "homepage": "https://github.com/liamdiprose/liamdiprose.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mustache": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
