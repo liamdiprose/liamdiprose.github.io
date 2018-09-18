@@ -179,7 +179,6 @@ section {
   }
 }
 
-
 section#skills {
   grid-area: skl;
   display: flex;
@@ -205,12 +204,22 @@ section#projects {
   }
 }
 
-
 section#education {
   grid-area: edu;
 
   .education-provider, .education-city {
     display: inline;
+  }
+
+  .education-explaination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .education-description {
+    margin-top: 5pt;
+    width: 230pt;
   }
 }
 

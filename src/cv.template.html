@@ -128,17 +128,16 @@
           <h4 class="education-provider">
             {{ provider }}
           </h4>
-          <!-- <h2 class="title"> -->
-            <!-- {{ title }} -->
-          <!-- </h2> -->
           <h4 class="education-city">{{ city }}, {{ country }}</h5>
           <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
-          <p course="education-description">{{ description }}</p>
-          <ul>
-            {{#themes}}
-            <li>{{ . }}</li>
-            {{/themes}}
-          </ul>
+          <div class="education-explaination">
+            <p class="education-description">{{ description }}</p>
+            <ul class="education-themes">
+              {{#themes}}
+              <li>{{ . }}</li>
+              {{/themes}}
+            </ul>
+          </div>
         </div>
       {{/education}}
       </section>
