@@ -225,13 +225,16 @@ section#education {
 
 section#experience {
   grid-area: exp;
+  display: flex;
+  flex-direction: column;
+
   .placements {
     display: flex;
+    height: 100%;
     flex-direction: column;
+    justify-content: space-between;
   }
-  .placement {
-    margin-bottom: 2em;
-  }
+
   ul {
     margin-top: 5px;
   }
