@@ -141,8 +141,7 @@ education:
           degree: Bachelor of Computer Engineering (with Honours)
           city: Christchurch
           country: New Zealand
-          description: Halfway between software and eletrical engineering, computer engineering
-                       focuses on lower-level software for embedded and high-performance software.
+          description: Computer engineering focuses on lower-level software for embedded and high-performance software.
           duration:
             start: 2015
             finish: 2018
