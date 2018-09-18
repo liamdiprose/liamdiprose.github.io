@@ -80,17 +80,16 @@ skills:
   #         UX prototyping with wireframes, Adobe Illustrator or Inkscape
 
   - name: Algorithms and Datastructures
-    more: Computer Science flavoured engineering, 
-          Compeditive Programming Contests. 
-          Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC competition.
+    more: Solid understanding of basic datastructures and search algorithms.
+          Placed 4<sup>th</sup> in NZ for the 2016 ACM ICPC programming competition.
 
     #Git, Configuration Management, Software Packaging, 
           #Deployment, AWS, Digital Ocean VPS, Process Supervisors, 
           #Build Tools CMake, Make
   - name: DevOps
     more: Proficent Git user. Make and CMake build automation. 
-          Configuration Mangement with Ansible. 
-          Experience using cloud VPS providers Amazon Web Services
+          Configuration Mangement with Ansible.
+          Deployment to AWS and other VPS instances.
 
   - name: Linux Administration
     more: Daily user for 3 years. Shell user, configuration,Debian and Arch Linux package creation, 
@@ -113,13 +112,12 @@ skills:
 experience:
   - title: Junior Design Engineer
     employer: Tait Communications
-    description: Robust Communcations Provider. Investigated methods of 
+    description: Robust Communcations Provider. Developed two methods of 
                  configuring internet-connected embedded devices.
     duties:
       - Python
-      - Lua Development
+      - Lua
       - Configuration Management
-      - Embedded Linux 
       - Angular 
     duration:
           start: Nov 2017
@@ -127,7 +125,7 @@ experience:
   
   - title: Software Developer
     employer: AgSense NZ
-    description: Sensor network Startup. Modernised Node.js codebase
+    description: Sensor network Startup. Modernised Node.js codebase, automated build scripts.
     duties:
       - Node.js
       - Code Refactoring 
@@ -142,12 +140,13 @@ education:
           city: Christchurch
           country: New Zealand
           description: Computer engineering focuses on lower-level software for embedded and high-performance software.
+                       Minor in computer networking.
           duration:
             start: 2015
             finish: 2018
           themes:
-            - Object-Oriented Software Design
-            - Embedded Software
+            - Object-Oriented Design
+            - Embedded Devices
             - Computer Networking
             - Digital Signal Processing
           gpa: 
