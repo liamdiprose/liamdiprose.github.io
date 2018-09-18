@@ -58,20 +58,6 @@
         </div>
       </header>
 
-      <section id="skills">
-        <h2 class="title">
-          Skills
-        </h2>
-        <div class="skill-list">
-      {{#skills}}
-          <div class="skill">
-          <h3>{{name}}</h3>
-          <p>{{{more}}}</p>
-          </div>
-      {{/skills}} 
-        </div>
-      </section>
-
       <section id="projects">
         <h2 class="title">
           Projects
@@ -95,33 +81,20 @@
         </div>
       </section>
 
-      <section id="education">
+      <section id="skills">
         <h2 class="title">
-          Education
+          Skills
         </h2>
-      {{#education}} 
-        <div class="education-item">
-          <!-- <img class="education-logo" src="{{ logo }}"> -->
-
-          <h3 class="title">{{ degree }}</h3>
-          <h4 class="education-provider">
-            {{ provider }}
-          </h4>
-          <!-- <h2 class="title"> -->
-            <!-- {{ title }} -->
-          <!-- </h2> -->
-          <h4 class="education-city">{{ city }}, {{ country }}</h5>
-          <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
-          <p course="education-description">{{ description }}</p>
-          <ul>
-            {{#themes}}
-            <li>{{ . }}</li>
-            {{/themes}}
-          </ul>
+        <div class="skill-list">
+      {{#skills}}
+          <div class="skill">
+          <h3>{{name}}</h3>
+          <p>{{{more}}}</p>
+          </div>
+      {{/skills}} 
         </div>
-      {{/education}}
       </section>
-      
+
       <section id="experience">
         <h2 class="title">
           Experience
@@ -143,6 +116,31 @@
           </div>
           {{/experience}}
         </div>
+      </section>
+
+      <section id="education">
+        <h2 class="title">
+          Education
+        </h2>
+      {{#education}} 
+        <div class="education-item">
+          <h3 class="title">{{ degree }}</h3>
+          <h4 class="education-provider">
+            {{ provider }}
+          </h4>
+          <!-- <h2 class="title"> -->
+            <!-- {{ title }} -->
+          <!-- </h2> -->
+          <h4 class="education-city">{{ city }}, {{ country }}</h5>
+          <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
+          <p course="education-description">{{ description }}</p>
+          <ul>
+            {{#themes}}
+            <li>{{ . }}</li>
+            {{/themes}}
+          </ul>
+        </div>
+      {{/education}}
       </section>
     <!-- page content -->
   </div>
