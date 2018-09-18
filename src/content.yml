@@ -127,7 +127,7 @@ experience:
   
   - title: Software Developer
     employer: AgSense NZ
-    description: Agricultural sensors Startup, rewriting early code, implementing elements for visual programming, investigated methods of deploying software updates
+    description: Sensor network Startup. Modernised Node.js codebase
     duties:
       - Node.js
       - Code Refactoring 
@@ -138,7 +138,7 @@ experience:
 
 education:
         - provider: University of Canterbury
-          degree: Bachelor of Computer Engineering (with Honours)
+          degree: Bachelor of Computer Engineering with Honours
           city: Christchurch
           country: New Zealand
           description: Computer engineering focuses on lower-level software for embedded and high-performance software.
