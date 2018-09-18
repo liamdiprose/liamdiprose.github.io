@@ -20,37 +20,30 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 sub, sup {
   /* Specified in % so that the sup/sup is the
@@ -64,28 +57,23 @@ sub, sup {
   position: relative;
   /* Note that if you're using Eric Meyer's reset.css, this
      is already set and you can remove this rule */
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sup {
   /* Move the superscripted text up */
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 sub {
   /* Move the subscripted text down, but only
      half as far down as the superscript moved up */
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 html {
-  background-color: lightgray;
-}
+  background-color: lightgray; }
 
 body {
   margin: 1em;
-  font-family: "Roboto", "DejaVu Serif Bold", Tahoma, Geneva, sans-serif;
-}
+  font-family: 'Roboto', 'DejaVu Serif Bold', Tahoma, Geneva, sans-serif; }
 
 ul {
   list-style-type: square;
@@ -93,62 +81,52 @@ ul {
   list-style-position: outside;
   margin-left: 12pt;
   margin-bottom: 2pt;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 a {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:hover {
   color: #1a1a1a;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 h1 {
   font-weight: bold;
-  font-family: "Overpass";
-  font-size: 32pt;
-}
+  font-family: 'Overpass';
+  font-size: 32pt; }
 
 h2 {
   font-weight: bold;
-  font-family: "Overpass";
-  font-size: 22pt;
-}
+  font-family: 'Overpass';
+  font-size: 22pt; }
 
 h3 {
   font-weight: bold;
-  font-family: "Overpass";
+  font-family: 'Overpass';
   font-size: 15pt;
   margin: 2pt;
   margin-left: 0;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 h4 {
-  font-size: 14pt;
-}
+  font-size: 14pt; }
 
 p {
   margin-bottom: 5pt;
   word-wrap: break-word;
-  line-height: 120%;
-}
+  line-height: 120%; }
 
 .a4-paper {
   height: 297mm;
   width: 210mm;
-  padding: 7mm;
-}
+  padding: 7mm; }
 
 .paper {
   box-shadow: 2mm 4mm 1mm gray;
   /* TODO: media query, and not for @page */
   margin: auto;
-  background-color: white;
-}
+  background-color: white; }
 
 #page-content {
   height: 100%;
@@ -156,8 +134,7 @@ p {
   grid-template-columns: 1.2fr 1fr 1fr;
   grid-template-rows: auto repeat(5, 1fr);
   grid-gap: 12pt;
-  grid-template-areas: "head head head" "pro skl skl" "pro skl skl" "pro skl skl" "exp skl skl" "exp edu edu";
-}
+  grid-template-areas: "head head head" "pro skl skl" "pro skl skl" "pro skl skl" "exp skl skl" "exp edu edu"; }
 
 header {
   grid-area: head;
@@ -165,58 +142,46 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0pt;
-}
+  margin: 0pt; }
 
 #header-title {
-  flex-grow: 1;
-}
-#header-title #name-title {
-  font-size: 45pt;
-  margin-top: 0;
-}
-#header-title #name-subtitle {
-  margin: 0;
-  font-size: 18pt;
-  font-family: "Roboto";
-}
+  flex-grow: 1; }
+  #header-title #name-title {
+    font-size: 45pt;
+    margin-top: 0; }
+  #header-title #name-subtitle {
+    margin: 0;
+    font-size: 18pt;
+    font-family: 'Roboto'; }
 
 #contact-details {
   margin: auto;
-  font-size: 15pt;
-}
+  font-size: 15pt; }
 
 #contact-details-content {
   display: inline-block;
   box-sizing: border-box;
-  top: 50%;
-}
-#contact-details-content .contact-item {
-  display: table;
-  padding-bottom: 3pt;
-}
-#contact-details-content .contact-item i {
-  padding-right: 5pt;
-}
-#contact-details-content .contact-item .item-title {
-  font-weight: bold;
-  width: 60pt;
-  text-align: right;
-  padding-right: 5pt;
-  display: none;
-}
-#contact-details-content .contact-item .item-value {
-  display: table-cell;
-  text-align: right;
-}
+  top: 50%; }
+  #contact-details-content .contact-item {
+    display: table;
+    padding-bottom: 3pt; }
+    #contact-details-content .contact-item i {
+      padding-right: 5pt; }
+    #contact-details-content .contact-item .item-title {
+      font-weight: bold;
+      width: 60pt;
+      text-align: right;
+      padding-right: 5pt;
+      display: none; }
+    #contact-details-content .contact-item .item-value {
+      display: table-cell;
+      text-align: right; }
 
 section {
   background-color: whitesmoke;
-  padding-left: 3pt;
-}
-section .title {
-  margin-top: 3pt;
-}
+  padding-left: 3pt; }
+  section .title {
+    margin-top: 3pt; }
 
 section h2.title::before {
   content: " ";
@@ -226,56 +191,55 @@ section h2.title::before {
   display: block;
   margin-bottom: 5pt;
   margin-left: -3pt;
-  margin-top: -4px;
-}
+  margin-top: -4px; }
+
 section h2.title {
   margin-bottom: 7pt;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 section#skills {
   grid-area: skl;
   display: flex;
-  flex-direction: column;
-}
-section#skills .skill-list {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  flex-direction: column; }
+  section#skills .skill-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 section#projects {
   grid-area: pro;
   display: flex;
-  flex-direction: column;
-}
-section#projects .project-list {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  flex-direction: column; }
+  section#projects .project-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 section#education {
-  grid-area: edu;
-}
-section#education .education-provider, section#education .education-city {
-  display: inline;
-}
+  grid-area: edu; }
+  section#education .education-provider, section#education .education-city {
+    display: inline; }
+  section#education .education-explaination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  section#education .education-description {
+    margin-top: 5pt;
+    margin-right: 5pt;
+    width: 220pt; }
 
 section#experience {
   grid-area: exp;
-}
-section#experience .placements {
   display: flex;
-  flex-direction: column;
-}
-section#experience .placement {
-  margin-bottom: 2em;
-}
-section#experience ul {
-  margin-top: 5px;
-}
-
-/*# sourceMappingURL=style.css.map */
+  flex-direction: column; }
+  section#experience .placements {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between; }
+  section#experience .description {
+    margin-top: 3pt; }
+  section#experience ul {
+    margin-top: 5px; }
