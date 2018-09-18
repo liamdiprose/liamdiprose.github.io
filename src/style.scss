@@ -219,7 +219,8 @@ section#education {
 
   .education-description {
     margin-top: 5pt;
-    width: 230pt;
+    margin-right: 5pt;
+    width: 220pt;
   }
 }
 
@@ -233,6 +234,10 @@ section#experience {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .description {
+    margin-top: 3pt;
   }
 
   ul {
