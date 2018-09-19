@@ -125,11 +125,11 @@ experience:
   
   - title: Software Developer
     employer: AgSense NZ
-    description: Sensor network Startup. Modernised Node.js codebase, automated build scripts.
+    description: Sensor network Startup. Modernised Node.js codebase, automated build script.
     duties:
       - Node.js
       - Code Refactoring 
-      - Software Packaging (Debian)
+      - Software Packaging
     duration:
           start: Nov 2016
           end: May 2017
