@@ -7,6 +7,7 @@ contact:
 
 projects:
   - title: Sheep Tracking System
+    github: JK
     description: Tracks sheep locations with beacon time-of-arrival and triangulation. 
                  Engineering Honours Project.
     skills:
@@ -29,11 +30,21 @@ projects:
       - ARM Microcontrollers
       - Control Systems (PID)
 
-  - title: Course File Scraper
-    description: Downloads files off a university course website to a local folder.
+  - title: Cow Tracking Research Paper
+    description: 
+        > 
+          Computer vision research to track cattle
+          in milking sheds to enable automation.
+          My paper has been submitted to the IVCNZ confrence.
     skills: 
-      - Python (Requests)
-      - Web Scraping
+      - Amazon Web Services
+      - Deep Machine Learning
+
+        #  - title: Course File Scraper
+        #    description: Downloads files off a university course website to a local folder.
+        #    skills: 
+        #      - Python (Requests)
+        #      - Web Scraping
 
   # - title: Microcontroller Support Library
   #   description: Wraps microcontroller register-level control in
@@ -87,7 +98,7 @@ skills:
           #Deployment, AWS, Digital Ocean VPS, Process Supervisors, 
           #Build Tools CMake, Make
   - name: DevOps
-    more: Proficent Git user. Make and CMake build automation. 
+    more: Make and CMake build automation. 
           Configuration Mangement with Ansible.
           Deployment to AWS and other VPS instances.
 
