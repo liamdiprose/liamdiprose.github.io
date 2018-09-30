@@ -112,8 +112,9 @@ skills:
 experience:
   - title: Junior Design Engineer
     employer: Tait Communications
+
     description: Robust Communcations Provider. Developed two methods of 
-                 configuring internet-connected embedded devices.
+                 controlling internet-connected embedded devices.
     duties:
       - Python
       - Lua
