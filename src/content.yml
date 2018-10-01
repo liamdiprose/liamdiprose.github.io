@@ -81,25 +81,25 @@ skills:
           # Website layout and styling with CSS and CSS Frameworks
           # Visualisations with d3.js
           # Stores
-          Designed and Implemented Graphical user interfaces with Qt and on the browser with jQuery, d3.js, Angular, and Vue.
+          Designed and implemented graphical user interfaces with Qt and on the browser with jQuery, d3.js, Angular, and Vue.
           Mobile-friendly website styling with CSS and Bootstrap. 
     
   - name: Backend Development
     # more: Node.js Express, Python Flask, Relational Databases, Nginx, Authentication Schemes
     #       WebSockets RESTful servers, GraphQL
     more: Developed RESTful APIs with Node.js and Python, using both relational and NoSQL databases.
-          Implemented an event-based server that pushes changes using Websockets.
+          Implemented an event-based server that pushes changes using WebSockets.
 
   # - name: Website UX
   #   more: Layout and styling with CSS and Frameworks. visualistions with d3.js
   #         UX prototyping with wireframes, Adobe Illustrator or Inkscape
 
   - name: Algorithmic Problem Solving
-    more: Understand basic search and sorting algorithms, complexity and data structures (<a href="https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC122&occurrence=15S2(C)&year=2015">COSC122</a>).
+    more: Understand the basic search and sorting algorithms, complexity and data structures (<a href="https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC122&occurrence=15S2(C)&year=2015">COSC122</a>).
           Competed in several programming competitions, placing 4<sup>th</sup> in the 2016 ACM ICPC competition.
 
   - name: Functional Programming
-    more: As a Haskell hobbyist, I understand the primatives of functional languages. I enjoy using functional-style code
+    more: As a Haskell hobbyist, I understand the primitives of functional languages. I enjoy using functional-style code
           to improve code readability in hybrid languages, and with libraries such as ReactiveX.
 
   - name: DevOps
@@ -116,13 +116,13 @@ skills:
 
   - name: Professional Communication
     more: I love helping people understand a problem, or why an idea is cool or important. 
-          I have 185 reputation on <a href="https://stackoverflow.com/users/2640059/liamdiprose">Stack Overflow</a>,
-          and was the primary contact with the client for my industry-backed honours project.
+          I have 185 reputation on <a href="https://stackoverflow.com/users/2640059/liamdiprose">Stack Overflow</a>
+          and was the primary communicator with the client for my industry-backed honours project.
 
 experience:
   - title: Junior Design Engineer
     employer: Tait Communications
-    description: Modified Ansible to work with nicely with embedded devices. Wrote an event-based Lua script to execute changes through a Websockets API.
+    description: Modified Ansible to work with nicely with embedded devices. Wrote an event-based Lua script to execute changes through a WebSockets API.
     duties:
       - Python
       - Lua
