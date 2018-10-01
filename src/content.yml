@@ -98,10 +98,13 @@ skills:
     more: Understand basic search and sorting algorithms, complexity and datastructures (<a href="https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC122&occurrence=15S2(C)&year=2015">COSC122</a>).
           Competed in several programming competitions, placing 4<sup>th</sup> in the 2016 ACM ICPC competition.
 
+  - name: Functional Programming
+    more: As a Haskell hobbyist, I understand the primatives of functional languages. I enjoy using functional style code
+          to improve code readability in hybrid languages, and with libraries such as ReactiveX.
+
   - name: DevOps
     more: Used many build automation tools such as CMake. Performed automated software deployment and configuration
           with Ansible. Mangement of VPS instances on AWS and Digital Ocean.
-
 
   - name: Linux Administration
     more: Daily user of a Linux desktop and UNIX shell commands. Experienced at configuring systemd services and 
@@ -111,9 +114,6 @@ skills:
     more: Oversee the set up the network for the university gaming club LAN events.
           Maintain a VPS to host <a href="https://liamdiprose.com">my website</a> and other personal services.
 
-  - name: Functional Programming
-    more: As a Haskell hobbyist, I understand the primatives of functional languages. I enjoy using functional style code
-          to improve code readability in hybrid languages, and with libraries such as ReactiveX.
 
   - name: Professional Communication
     more: I love helping people understand a problem, or why an idea is cool or important. 
@@ -155,10 +155,10 @@ education:
             start: 2015
             finish: 2019
           themes:
-            - Object-Oriented Design
             - Embedded Devices
             - Operating Systems
             - Computer Networking
+            - Object-Oriented Design
           gpa: 
             graduation: 6.67
             cumulative: 3.94
