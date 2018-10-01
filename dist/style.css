@@ -182,7 +182,9 @@ header {
 
 section {
   background-color: whitesmoke;
-  padding-left: 3pt; }
+  padding-left: 3pt;
+  padding-right: 3pt;
+  padding-bottom: 1pt; }
   section .title {
     margin-top: 3pt; }
 
@@ -221,7 +223,8 @@ section#projects {
     justify-content: space-between; }
 
 section#education {
-  grid-area: edu; }
+  grid-area: edu;
+  padding-bottom: 12pt; }
   section#education .education-provider, section#education .education-city {
     display: inline; }
   section#education .education-explaination {
@@ -229,9 +232,18 @@ section#education {
     flex-direction: row;
     justify-content: space-between; }
   section#education .education-description {
-    margin-top: 5pt;
     margin-right: 5pt;
     width: 220pt; }
+  section#education .title-block {
+    margin-bottom: 6pt; }
+  section#education .subdegree {
+    font-weight: bold;
+    font-size: 12pt; }
+  section#education .subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8pt; }
 
 section#experience {
   grid-area: exp;
