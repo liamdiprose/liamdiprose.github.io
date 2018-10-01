@@ -65,11 +65,14 @@
         <div class="project-list">
         {{#projects}} 
           <div class="project">
-            <h3 class="title">
-              {{ title }}
-            </h3>
+            {{#link}}
+            <h3 class="title"><a target="_blank" href="{{ link }}">{{ title }}</a></h3>
+            {{/link}}
+            {{^link}}
+            <h3 class="title no-link">{{ title }}</h3>
+            {{/link}}
             <p class="description">
-              {{ description }}
+            {{ description }}
             </p>
             <ul class="project-tech">
             {{#skills}} 
@@ -127,12 +130,17 @@
         </h2>
       {{#education}} 
         <div class="education-item">
-          <h3 class="title">{{ degree }}</h3>
-          <h4 class="education-provider">
+          <div class="title-block">
+            <h3 class="title">{{ degree }}</h3>
+            <h4 class="subdegree">{{ subdegree }}</h4>
+          </div>
+          <div class="subtitle">
+            <h4 class="education-provider">
             {{ provider }}
-          </h4>
-          <h4 class="education-city">{{ city }}, {{ country }}</h5>
-          <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
+            </h4>
+            <!-- <h4 class="education-city">{{ city }}, {{ country }}</h5> -->
+            <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
+          </div>
           <div class="education-explaination">
             <p class="education-description">{{ description }}</p>
             <ul class="education-themes">
