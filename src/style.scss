@@ -163,6 +163,8 @@ section {
   }
   background-color: whitesmoke;
   padding-left: 3pt;
+  padding-right: 3pt;
+  padding-bottom: 1pt;
 }
 
 section {
@@ -222,10 +224,25 @@ section#education {
   }
 
   .education-description {
-    margin-top: 5pt;
     margin-right: 5pt;
     width: 220pt;
   }
+  .title-block {
+    margin-bottom: 6pt;
+  }
+
+  .subdegree {
+    font-weight: bold;
+    font-size: 12pt;
+  }
+
+  .subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8pt;
+  }
+  padding-bottom: 12pt;
 }
 
 section#experience {
@@ -247,4 +264,5 @@ section#experience {
   ul {
     margin-top: 5px;
   }
+
 }
