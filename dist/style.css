@@ -117,6 +117,9 @@ p {
   word-wrap: break-word;
   line-height: 120%; }
 
+b {
+  font-weight: bold; }
+
 .a4-paper {
   height: 297mm;
   width: 210mm;
