@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>{{ name }}'s Resume</title>
@@ -102,7 +103,7 @@
               <li property="itemListElement">{{ . }}</li>
               {{/duties}}
             </ul>
-            <meta name="endDate" property="endDate" content="2018-02-10T170000+1300">
+            <meta property="endDate" content="2018-02-10T170000+1300">
           </div>
           {{/experience}}
         </div>
@@ -121,7 +122,7 @@
           <div class="subtitle" property="hiringOrganization" typeof="CollegeOrUniversity">
             <h4 class="education-provider" property="name">{{ provider }}</h4>
             <!-- <h4 class="education-city">{{ city }}, {{ country }}</h5> -->
-            <meta property="location" property="location" content="{{ city }}, {{ country }}">
+            <meta property="location" content="{{ city }}, {{ country }}">
             <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
           </div>
           <div class="education-explaination">
@@ -138,6 +139,7 @@
     <!-- page content -->
   </div>
   <!-- page container -->
+  </div>
 </body>
 
 </html>
