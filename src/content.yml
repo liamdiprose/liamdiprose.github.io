@@ -8,7 +8,7 @@ contact:
 
 projects:
   - title: Sheep Tracking System
-    description: Tracks sheep locations with beacon time-of-arrival and triangulation.
+    description: Tracks sheep locations with radio time-of-arrival and triangulation.
     skills:
       - Python (OpenAPI / Swagger)
       - Vue.js + d3.js
@@ -35,7 +35,7 @@ projects:
     link: https://www.youtube.com/watch?v=CcEde-phdMo
     description: 
           Computer vision research to track cattle movement.
-          Currently under peer review for the IVCNZ conference.
+          Reviewed by the IVCNZ Computer Vision Conference.
     skills: 
       - Computer Vision
       - Deep Learning
