@@ -196,7 +196,8 @@ section h2.title::before {
   display: block;
   margin-bottom: 5pt;
   margin-left: -3pt;
-  margin-top: -4px; }
+  margin-top: -4px;
+  margin-right: -3pt; }
 
 section h2.title {
   margin-bottom: 7pt;
