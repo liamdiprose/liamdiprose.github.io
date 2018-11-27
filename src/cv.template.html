@@ -11,13 +11,14 @@
 
 <body>
   <div id="page-container" class="paper a4-paper">
-    <div id="page-content" itemscope itemtype="http:/schema.org/Person">
+    <div id="page-content" vocab="http://schema.org/" typeof="Person">
+
       <header id="header">
         <div id="header-title">
-          <h1 id="name-title">{{ name }}</h1>
-          <h3 id="name-subtitle" itemprop="description">{{ subtitle }}</h3>
+          <h1 id="name-title" property="givenName">{{ name }}</h1>
+          <h3 id="name-subtitle" property="description">{{ subtitle }}</h3>
         </div>
-        <address itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+        <address property="contactPoint" typeof="ContactPoint">
           <div id="contact-details">
             <div id="contact-details-content">
               <div class="contact-item" id="phone">
@@ -25,25 +26,21 @@
                 <div class="item-title">
                   Phone
                 </div>
-                <div class="item-value" property="telephone" itemprop="telephone">
-                  {{ contact.phone }}
-                </div>
+                <div class="item-value" property="telephone">{{ contact.phone }}</div>
               </div>
               <div class="contact-item" id="email">
                 <i class="fas fa-envelope"></i>
                 <div class="item-title">
                   Email
                 </div>
-                <div class="item-value" property="email" itemprop="email">
-                  <a href="mailto:{{contact.email}}">{{ contact.email }}</a>
-                </div>
+                <div class="item-value" property="email"><a href="mailto:{{contact.email}}">{{ contact.email }}</a></div>
               </div>
               <div class="contact-item" id="github">
                 <i class="fab fa-github"></i>
                 <div class="item-title">GitHub</div>
-                <div class="item-value" itemprop="contactOption" itemscope itemtype="http://schema.org/ContactPointOption">
-                  <meta itemprop="name" content="GitHub Profile">
-                  <a href="https://www.github.com/{{contact.github}}" itemprop="url">{{ contact.github }}</a>
+                <div class="item-value" property="contactOption" typeof="ContactPointOption">
+                  <meta property="name" content="GitHub Profile">
+                  <a href="https://www.github.com/{{contact.github}}" property="url">{{ contact.github }}</a>
                 </div>
               </div>
             </div>
@@ -57,18 +54,18 @@
         </h2>
         <div class="project-list">
         {{#projects}} 
-          <div class="project" itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="project" property="owns" typeof="CreativeWork">
             {{#link}}
-            <h3 class="title"><a target="_blank" href="{{ link }}" itemprop="name">{{ title }}</a></h3>
-            <meta itemprop="url" content="{{ link }}">
+            <h3 class="title" property="name"><a target="_blank" href="{{ link }}">{{ title }}</a></h3>
+            <meta property="url" content="{{ link }}">
             {{/link}}
             {{^link}}
-            <h3 class="title no-link" itemprop="name">{{ title }}</h3>
+            <h3 class="title no-link" property="name">{{ title }}</h3>
             {{/link}}
-            <p class="description" itemprop="description">{{ description }}</p>
-            <ul class="project-tech" itemprop="keywords" itemscope itemtype="http://schema.org/ItemList">
-            {{#skills}} 
-              <li itemprop="itemListElement">{{.}}</li>
+            <p class="description" property="description">{{ description }}</p>
+            <ul class="project-tech" property="keywords" typeof="ItemList">
+            {{#skills}}
+            <li property="itemListElement">{{.}}</li>
             {{/skills}}
             </ul>
           </div>
@@ -82,9 +79,9 @@
         </h2>
         <div class="skill-list">
       {{#skills}}
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">{{name}}</h3>
-          <p itemprop="description">{{{more}}}</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">{{name}}</h3>
+          <p property="description">{{{more}}}</p>
           </div>
       {{/skills}} 
         </div>
@@ -96,16 +93,16 @@
         </h2>
         <div class="placements">
           {{#experience}}
-          <div class="placement" itemprop="hasOccupation" itemscope itemtype="http://schema.org/EmployeeRole">
-            <h3 class="jobtitle" itemprop="name">{{ title }}</h3>
-            <h4 class="name" itemprop="hiringOrganization">{{ employer }}</h4>
-            <p class="description" itemprop="description">{{description}}</p>
-            <ul class="duties" itemprop="responsibilities" itemscope itemtype="http://schema.org/ItemList">
+          <div class="placement" property="hasOccupation" typeof="EmployeeRole">
+            <h3 class="jobtitle" property="name">{{ title }}</h3>
+            <h4 class="name" property="hiringOrganization">{{ employer }}</h4>
+            <p class="description" property="description">{{description}}</p>
+            <ul class="duties" property="responsibilities" typeof="ItemList">
               {{#duties}}
-              <li itemprop="itemListElement">{{ . }}</li>
+              <li property="itemListElement">{{ . }}</li>
               {{/duties}}
             </ul>
-            <meta name="endDate" itemprop="endDate" content="2018-02-10T170000+1300">
+            <meta name="endDate" property="endDate" content="2018-02-10T170000+1300">
           </div>
           {{/experience}}
         </div>
@@ -116,22 +113,22 @@
           Education
         </h2>
       {{#education}} 
-        <div class="education-item" itemprop="hasOccupation" itemscope itemtype="http://schema.org/Occupation">
+        <div class="education-item" property="hasOccupation" typeof="Occupation">
           <div class="title-block" >
-            <h3 class="title" itemprop="name">{{ degree }}</h3>
-            <h4 class="subdegree" itemprop="">{{ subdegree }}</h4>
+            <h3 class="title" property="name">{{ degree }}</h3>
+            <h4 class="subdegree" property="">{{ subdegree }}</h4>
           </div>
-          <div class="subtitle" itemprop="hiringOrganization" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-            <h4 class="education-provider" itemprop="name">{{ provider }}</h4>
+          <div class="subtitle" property="hiringOrganization" typeof="CollegeOrUniversity">
+            <h4 class="education-provider" property="name">{{ provider }}</h4>
             <!-- <h4 class="education-city">{{ city }}, {{ country }}</h5> -->
-            <meta property="location" itemprop="location" content="{{ city }}, {{ country }}">
+            <meta property="location" property="location" content="{{ city }}, {{ country }}">
             <span class="year-range">{{ duration.start }} - {{duration.finish }}</span>
           </div>
           <div class="education-explaination">
-            <p class="education-description" itemprop="description">{{ description }}</p>
-            <ul class="education-themes" itemprop="skills" itemscope itemtype="http://schema.org/ItemList">
+            <p class="education-description" property="description">{{ description }}</p>
+            <ul class="education-themes" property="skills" typeof="ItemList">
               {{#themes}}
-              <li itemprop="itemListElement">{{ . }}</li>
+              <li property="itemListElement">{{ . }}</li>
               {{/themes}}
             </ul>
           </div>
