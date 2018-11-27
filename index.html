@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <title>Liam Diprose's Resume</title>
-  <meta name="description" content="Liam Diprose's Description">
+  <meta name="description" content="Liam&#39;s Work Experience and Projects on a page">
 
   <link href="https://fonts.googleapis.com/css?family=Overpass|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -11,13 +11,14 @@
 
 <body>
   <div id="page-container" class="paper a4-paper">
-    <div id="page-content" itemscope itemtype="http:/schema.org/Person">
+    <div id="page-content" vocab="http://schema.org/" typeof="Person">
+
       <header id="header">
         <div id="header-title">
-          <h1 id="name-title">Liam Diprose</h1>
-          <h3 id="name-subtitle" itemprop="description">Computer Engineering Graduate</h3>
+          <h1 id="name-title" property="givenName">Liam Diprose</h1>
+          <h3 id="name-subtitle" property="description">Computer Engineering Graduate</h3>
         </div>
-        <address itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+        <address property="contactPoint" typeof="ContactPoint">
           <div id="contact-details">
             <div id="contact-details-content">
               <div class="contact-item" id="phone">
@@ -25,25 +26,21 @@
                 <div class="item-title">
                   Phone
                 </div>
-                <div class="item-value" property="telephone" itemprop="telephone">
-                  027 9191620
-                </div>
+                <div class="item-value" property="telephone">027 9191620</div>
               </div>
               <div class="contact-item" id="email">
                 <i class="fas fa-envelope"></i>
                 <div class="item-title">
                   Email
                 </div>
-                <div class="item-value" property="email" itemprop="email">
-                  <a href="mailto:liam@liamdiprose.com">liam@liamdiprose.com</a>
-                </div>
+                <div class="item-value" property="email"><a href="mailto:liam@liamdiprose.com">liam@liamdiprose.com</a></div>
               </div>
               <div class="contact-item" id="github">
                 <i class="fab fa-github"></i>
                 <div class="item-title">GitHub</div>
-                <div class="item-value" itemprop="contactOption" itemscope itemtype="http://schema.org/ContactPointOption">
-                  <meta itemprop="name" content="GitHub Profile">
-                  <a href="https://www.github.com/liamdiprose" itemprop="url">liamdiprose</a>
+                <div class="item-value" property="contactOption" typeof="ContactPointOption">
+                  <meta property="name" content="GitHub Profile">
+                  <a href="https://www.github.com/liamdiprose" property="url">liamdiprose</a>
                 </div>
               </div>
             </div>
@@ -56,44 +53,44 @@
           Projects
         </h2>
         <div class="project-list">
-          <div class="project" itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
-            <h3 class="title no-link" itemprop="name">Sheep Tracking System</h3>
-            <p class="description" itemprop="description">Tracks sheep locations with beacon time-of-arrival and triangulation.</p>
-            <ul class="project-tech" itemprop="keywords" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">Python (OpenAPI &#x2F; Swagger)</li>
-              <li itemprop="itemListElement">Vue.js + d3.js</li>
-              <li itemprop="itemListElement">Linux Configuration</li>
-              <li itemprop="itemListElement">Client Communication</li>
+          <div class="project" property="owns" typeof="CreativeWork">
+            <h3 class="title no-link" property="name">Sheep Tracking System</h3>
+            <p class="description" property="description">Tracks sheep locations with radio time-of-arrival and triangulation.</p>
+            <ul class="project-tech" property="keywords" typeof="ItemList">
+            <li property="itemListElement">Python (OpenAPI &#x2F; Swagger)</li>
+            <li property="itemListElement">Vue.js + d3.js</li>
+            <li property="itemListElement">Linux Configuration</li>
+            <li property="itemListElement">Client Communication</li>
             </ul>
           </div>
-          <div class="project" itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
-            <h3 class="title"><a target="_blank" href="https:&#x2F;&#x2F;github.com&#x2F;liamdiprose&#x2F;Gatehinge" itemprop="name">Gateway Switcher</a></h3>
-            <meta itemprop="url" content="https:&#x2F;&#x2F;github.com&#x2F;liamdiprose&#x2F;Gatehinge">
-            <p class="description" itemprop="description">Quickly switch between two network gateways from the system tray.</p>
-            <ul class="project-tech" itemprop="keywords" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">C++ (Qt)</li>
-              <li itemprop="itemListElement">QMake</li>
-              <li itemprop="itemListElement">Routing Table Networking</li>
+          <div class="project" property="owns" typeof="CreativeWork">
+            <h3 class="title" property="name"><a target="_blank" href="https:&#x2F;&#x2F;github.com&#x2F;liamdiprose&#x2F;Gatehinge">Gateway Switcher</a></h3>
+            <meta property="url" content="https:&#x2F;&#x2F;github.com&#x2F;liamdiprose&#x2F;Gatehinge">
+            <p class="description" property="description">Quickly switch between two network gateways from the system tray.</p>
+            <ul class="project-tech" property="keywords" typeof="ItemList">
+            <li property="itemListElement">C++ (Qt)</li>
+            <li property="itemListElement">QMake</li>
+            <li property="itemListElement">Routing Table Networking</li>
             </ul>
           </div>
-          <div class="project" itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
-            <h3 class="title"><a target="_blank" href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;GmbMFPOEjqc" itemprop="name">Toy Helicopter Controller</a></h3>
-            <meta itemprop="url" content="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;GmbMFPOEjqc">
-            <p class="description" itemprop="description">Provides control of a remote control helicopter while keeping it steady.</p>
-            <ul class="project-tech" itemprop="keywords" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">Embedded C</li>
-              <li itemprop="itemListElement">ARM Microcontrollers</li>
-              <li itemprop="itemListElement">Control Systems (PID)</li>
+          <div class="project" property="owns" typeof="CreativeWork">
+            <h3 class="title" property="name"><a target="_blank" href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;GmbMFPOEjqc">Toy Helicopter Controller</a></h3>
+            <meta property="url" content="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;GmbMFPOEjqc">
+            <p class="description" property="description">Provides control of a remote control helicopter while keeping it steady.</p>
+            <ul class="project-tech" property="keywords" typeof="ItemList">
+            <li property="itemListElement">Embedded C</li>
+            <li property="itemListElement">ARM Microcontrollers</li>
+            <li property="itemListElement">Control Systems (PID)</li>
             </ul>
           </div>
-          <div class="project" itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
-            <h3 class="title"><a target="_blank" href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;CcEde-phdMo" itemprop="name">Cow Tracking Research</a></h3>
-            <meta itemprop="url" content="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;CcEde-phdMo">
-            <p class="description" itemprop="description">Computer vision research to track cattle movement. Currently under peer review for the IVCNZ conference.</p>
-            <ul class="project-tech" itemprop="keywords" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">Computer Vision</li>
-              <li itemprop="itemListElement">Deep Learning</li>
-              <li itemprop="itemListElement">Amazon Web Services</li>
+          <div class="project" property="owns" typeof="CreativeWork">
+            <h3 class="title" property="name"><a target="_blank" href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;CcEde-phdMo">Cow Tracking Research</a></h3>
+            <meta property="url" content="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;CcEde-phdMo">
+            <p class="description" property="description">Computer vision research to track cattle movement. Reviewed by the IVCNZ Computer Vision Conference.</p>
+            <ul class="project-tech" property="keywords" typeof="ItemList">
+            <li property="itemListElement">Computer Vision</li>
+            <li property="itemListElement">Deep Learning</li>
+            <li property="itemListElement">Amazon Web Services</li>
             </ul>
           </div>
         </div>
@@ -104,37 +101,37 @@
           Skills
         </h2>
         <div class="skill-list">
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Frontend Development</h3>
-          <p itemprop="description">Designed and implemented graphical user interfaces with Qt and on the browser with jQuery, d3.js, Angular, and Vue. Mobile-friendly website styling with CSS and Bootstrap.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Frontend Development</h3>
+          <p property="description">Designed and implemented graphical user interfaces with Qt and on the browser with jQuery, d3.js, Angular, and Vue. Mobile-friendly website styling with CSS and Bootstrap.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Backend Development</h3>
-          <p itemprop="description">Developed RESTful APIs with Node.js and Python, using both relational and NoSQL databases. Implemented an event-based server that pushes changes using WebSockets.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Backend Development</h3>
+          <p property="description">Developed RESTful APIs with Node.js and Python, using both relational and NoSQL databases. Implemented an event-based server that pushes changes using WebSockets.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Algorithmic Problem Solving</h3>
-          <p itemprop="description">Understand the basic search and sorting algorithms, complexity and data structures (<a href="https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC122&occurrence=15S2(C)&year=2015">COSC122</a>). Competed in several programming competitions, placing 4<sup>th</sup> in the 2016 ACM ICPC competition.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Algorithmic Problem Solving</h3>
+          <p property="description">Understand the basic search and sorting algorithms, complexity and data structures (<a href="https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC122&occurrence=15S2(C)&year=2015">COSC122</a>). Competed in several programming competitions, placing 4<sup>th</sup> in the 2016 ACM ICPC competition.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Functional Programming</h3>
-          <p itemprop="description">As a Haskell hobbyist, I understand the primitives of functional languages. I enjoy using functional-style code to improve code readability in hybrid languages, and with libraries such as ReactiveX.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Functional Programming</h3>
+          <p property="description">As a Haskell hobbyist, I understand the primitives of functional languages. I enjoy using functional-style code to improve code readability in hybrid languages, and with libraries such as ReactiveX.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">DevOps</h3>
-          <p itemprop="description">Used many build automation tools such as CMake. Performed automated software deployment and configuration with Ansible. Management of VPS instances on AWS and Digital Ocean.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">DevOps</h3>
+          <p property="description">Used many build automation tools such as CMake. Performed automated software deployment and configuration with Ansible. Management of VPS instances on AWS and Digital Ocean.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Linux Administration</h3>
-          <p itemprop="description">Daily user of a Linux desktop and UNIX shell commands. Experienced at configuring systemd services and distribution software packages.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Linux Administration</h3>
+          <p property="description">Daily user of a Linux desktop and UNIX shell commands. Experienced at configuring systemd services and distribution software packages.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Computer Networking</h3>
-          <p itemprop="description">Oversee the set up the network for the university gaming club LAN events. Maintain a VPS to host <a href="https://liamdiprose.com">my website</a> and other personal services.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Computer Networking</h3>
+          <p property="description">Oversee the set up the network for the university gaming club LAN events. Maintain a VPS to host <a href="https://liamdiprose.com">my website</a> and other personal services.</p>
           </div>
-          <div class="skill" itemprop="knowsAbout" itemscope itemtype="http://schema.org/Intangible">
-          <h3 itemprop="name">Professional Communication</h3>
-          <p itemprop="description">I love helping people understand a problem, or why an idea is cool or important. I have 185 reputation on <a href="https://stackoverflow.com/users/2640059/liamdiprose">Stack Overflow</a> and was the primary communicator with the client for my industry-backed honours project.</p>
+          <div class="skill" property="knowsAbout" typeof="Intangible">
+          <h3 property="name">Professional Communication</h3>
+          <p property="description">I love helping people understand a problem, or why an idea is cool or important. I have 185 reputation on <a href="https://stackoverflow.com/users/2640059/liamdiprose">Stack Overflow</a> and was the primary communicator with the client for my industry-backed honours project.</p>
           </div>
         </div>
       </section>
@@ -144,28 +141,28 @@
           Experience
         </h2>
         <div class="placements">
-          <div class="placement" itemprop="hasOccupation" itemscope itemtype="http://schema.org/EmployeeRole">
-            <h3 class="jobtitle" itemprop="name">Junior Design Engineer</h3>
-            <h4 class="name" itemprop="hiringOrganization">Tait Communications</h4>
-            <p class="description" itemprop="description">Modified Ansible to work with nicely with embedded devices. Wrote an event-based Lua script to execute requests from a WebSockets API.</p>
-            <ul class="duties" itemprop="responsibilities" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">Python</li>
-              <li itemprop="itemListElement">Lua</li>
-              <li itemprop="itemListElement">Configuration Management</li>
-              <li itemprop="itemListElement">Angular</li>
+          <div class="placement" property="hasOccupation" typeof="EmployeeRole">
+            <h3 class="jobtitle" property="name">Junior Design Engineer</h3>
+            <h4 class="name" property="hiringOrganization">Tait Communications</h4>
+            <p class="description" property="description">Modified Ansible to work with nicely with embedded devices. Wrote an event-based Lua script to execute requests from a WebSockets API.</p>
+            <ul class="duties" property="responsibilities" typeof="ItemList">
+              <li property="itemListElement">Python</li>
+              <li property="itemListElement">Lua</li>
+              <li property="itemListElement">Configuration Management</li>
+              <li property="itemListElement">Angular</li>
             </ul>
-            <meta name="endDate" itemprop="endDate" content="2018-02-10T170000+1300">
+            <meta name="endDate" property="endDate" content="2018-02-10T170000+1300">
           </div>
-          <div class="placement" itemprop="hasOccupation" itemscope itemtype="http://schema.org/EmployeeRole">
-            <h3 class="jobtitle" itemprop="name">Software Developer</h3>
-            <h4 class="name" itemprop="hiringOrganization">AgSense NZ</h4>
-            <p class="description" itemprop="description">Sensor network Startup. Modernised Node.js codebase, automated build script.</p>
-            <ul class="duties" itemprop="responsibilities" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">Node.js</li>
-              <li itemprop="itemListElement">Code Refactoring</li>
-              <li itemprop="itemListElement">Nginx Configuration</li>
+          <div class="placement" property="hasOccupation" typeof="EmployeeRole">
+            <h3 class="jobtitle" property="name">Software Developer</h3>
+            <h4 class="name" property="hiringOrganization">AgSense NZ</h4>
+            <p class="description" property="description">Sensor network Startup. Modernised Node.js codebase, automated build script.</p>
+            <ul class="duties" property="responsibilities" typeof="ItemList">
+              <li property="itemListElement">Node.js</li>
+              <li property="itemListElement">Code Refactoring</li>
+              <li property="itemListElement">Nginx Configuration</li>
             </ul>
-            <meta name="endDate" itemprop="endDate" content="2018-02-10T170000+1300">
+            <meta name="endDate" property="endDate" content="2018-02-10T170000+1300">
           </div>
         </div>
       </section>
@@ -174,24 +171,24 @@
         <h2 class="title">
           Education
         </h2>
-        <div class="education-item" itemprop="hasOccupation" itemscope itemtype="http://schema.org/Occupation">
+        <div class="education-item" property="hasOccupation" typeof="Occupation">
           <div class="title-block" >
-            <h3 class="title" itemprop="name">Bachelor of Computer Engineering with Honours</h3>
-            <h4 class="subdegree" itemprop="">Minor in Computer Networking</h4>
+            <h3 class="title" property="name">Bachelor of Computer Engineering with Honours</h3>
+            <h4 class="subdegree" property="">Minor in Computer Networking</h4>
           </div>
-          <div class="subtitle" itemprop="hiringOrganization" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-            <h4 class="education-provider" itemprop="name">University of Canterbury</h4>
+          <div class="subtitle" property="hiringOrganization" typeof="CollegeOrUniversity">
+            <h4 class="education-provider" property="name">University of Canterbury</h4>
             <!-- <h4 class="education-city">Christchurch, New Zealand</h5> -->
-            <meta property="location" itemprop="location" content="Christchurch, New Zealand">
+            <meta property="location" property="location" content="Christchurch, New Zealand">
             <span class="year-range">2015 - 2019</span>
           </div>
           <div class="education-explaination">
-            <p class="education-description" itemprop="description">Computer engineering focuses on programming low-level embedded devices and high-performance software.</p>
-            <ul class="education-themes" itemprop="skills" itemscope itemtype="http://schema.org/ItemList">
-              <li itemprop="itemListElement">Embedded Devices</li>
-              <li itemprop="itemListElement">Operating Systems</li>
-              <li itemprop="itemListElement">Computer Networking</li>
-              <li itemprop="itemListElement">Object-Oriented Design</li>
+            <p class="education-description" property="description">Computer engineering focuses on programming low-level embedded devices and high-performance software.</p>
+            <ul class="education-themes" property="skills" typeof="ItemList">
+              <li property="itemListElement">Embedded Devices</li>
+              <li property="itemListElement">Operating Systems</li>
+              <li property="itemListElement">Computer Networking</li>
+              <li property="itemListElement">Object-Oriented Design</li>
             </ul>
           </div>
         </div>
