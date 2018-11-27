@@ -91,7 +91,7 @@ skills:
           Implemented an event-based server that pushes changes using WebSockets.
 
   # - name: Website UX
-  #   more: Layout and styling with CSS and Frameworks. visualistions with d3.js
+  #   more: Layout and styling with CSS and Frameworks. visualisations with d3.js
   #         UX prototyping with wireframes, Adobe Illustrator or Inkscape
 
   - name: Algorithmic Problem Solving
@@ -163,3 +163,4 @@ education:
             graduation: 6.67
             cumulative: 3.94
             max: 9.0
+
