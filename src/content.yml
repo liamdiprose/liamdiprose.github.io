@@ -35,7 +35,7 @@ projects:
     link: https://www.youtube.com/watch?v=CcEde-phdMo
     description: 
           Computer vision research to track cattle movement.
-          Reviewed by the IVCNZ Computer Vision Conference.
+          Submitted to the IVCNZ computer vision conference.
     skills: 
       - Computer Vision
       - Deep Learning
@@ -82,14 +82,15 @@ skills:
           # Website layout and styling with CSS and CSS Frameworks
           # Visualisations with d3.js
           # Stores
-          Designed and implemented graphical user interfaces with Qt and on the browser with jQuery, d3.js, Angular, and Vue.
+          Designed and implemented graphical user interfaces with Qt and in the browser using jQuery, d3.js, Angular, and Vue.
           Mobile-friendly website styling with CSS and Bootstrap. 
     
   - name: Backend Development
     # more: Node.js Express, Python Flask, Relational Databases, Nginx, Authentication Schemes
     #       WebSockets RESTful servers, GraphQL
-    more: Developed RESTful APIs with Node.js and Python, using both relational and NoSQL databases.
-          Implemented an event-based server that pushes changes using WebSockets.
+    more: Developed RESTful APIs with Node.js and Python, using PostgreSQL, Sqlite and Mongo databases. 
+          Used different authorization schemes and designed database schemas.
+
 
   # - name: Website UX
   #   more: Layout and styling with CSS and Frameworks. visualisations with d3.js
@@ -100,47 +101,47 @@ skills:
           Competed in several programming competitions, placing 4<sup>th</sup> in the 2016 ACM ICPC competition.
 
   - name: Functional Programming
-    more: As a Haskell hobbyist, I understand the primitives of functional languages. I enjoy using functional-style code
-          to improve code readability in hybrid languages, and with libraries such as ReactiveX.
+    more: Proficient Haskell programmer. Leverage functional design
+          to improve code readability and using event-driven libraries such as ReactiveX.
 
   - name: DevOps
     more: Used many build automation tools such as CMake. Performed automated software deployment and configuration
-          with Ansible. Management of VPS instances on AWS and Digital Ocean.
+          with Ansible. Management of VPS instances from AWS and Digital Ocean.
 
   - name: Linux Administration
-    more: Daily user of a Linux desktop and UNIX shell commands. Experienced at configuring systemd services and 
-          distribution software packages. 
+    more: Daily user of Linux desktop and UNIX shell commands. Experienced at systemd service configuration and 
+          software package creation.
 
   - name: Computer Networking
-    more: Oversee the set up the network for the university gaming club LAN events.
-          Maintain a VPS to host <a href="https://liamdiprose.com">my website</a> and other personal services.
+    more: Set up the network for the university gaming club LAN events.
+          Host <a href="https://liamdiprose.com">my personal website</a>, email and projects on a VPS. Familiar with network protocols from all layers of the OSI model.
 
   - name: Professional Communication
-    more: I love helping people understand a problem, or why an idea is cool or important. 
-          I have 185 reputation on <a href="https://stackoverflow.com/users/2640059/liamdiprose">Stack Overflow</a>
-          and was the primary communicator with the client for my industry-backed honours project.
+    more: Authored around 30 technical reports during my Engineering degree.
+          Team lead of industry-backed honours project. 
+          Answered 12 questions on <a target="_blank" href="https://stackoverflow.com/users/2640059/liamdiprose">Stack Overflow</a>.
 
 experience:
   - title: Junior Design Engineer
     employer: Tait Communications
-    description: Modified Ansible to work with nicely with embedded devices. 
-                 Wrote an event-based Lua script to execute requests from a WebSockets API.
+    description: Modified Ansible to work with embedded devices. 
+                 Implemented an event-based WebSocket API in Lua.
     duties:
       - Python
       - Lua
       - Configuration Management
-      - Angular 
+      - Angular Web Framework
     duration:
           start: Nov 2017
           end: Feb 2018
   
   - title: Software Developer
     employer: AgSense NZ
-    description: Sensor network Startup. Modernised Node.js codebase, automated build script.
+    description: Modernised Node.js codebase, automated build script.
     duties:
       - Node.js
       - Code Refactoring 
-      - Nginx Configuration
+      - Nginx Web Server
     duration:
           start: Nov 2016
           end: May 2017
@@ -164,4 +165,3 @@ education:
             graduation: 6.67
             cumulative: 3.94
             max: 9.0
-
