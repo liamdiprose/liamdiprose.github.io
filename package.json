@@ -4,7 +4,8 @@
   "description": "Liam Diprose's Resume",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+          "dev": "gulp watch",
+          "build": "gulp"
   },
   "repository": {
     "type": "git",
