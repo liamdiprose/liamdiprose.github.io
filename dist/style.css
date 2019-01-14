@@ -135,7 +135,7 @@ b {
   height: 100%;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  grid-template-rows: auto repeat(5, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr 1 1fr;
   grid-gap: 12pt;
   grid-template-areas: "head head head" "pro skl skl" "pro skl skl" "pro skl skl" "exp skl skl" "exp edu edu"; }
 
@@ -233,8 +233,9 @@ section#education {
     flex-direction: row;
     justify-content: space-between; }
   section#education .education-description {
-    margin-right: 5pt;
-    width: 220pt; }
+    margin-right: 5pt; }
+  section#education .education-themes {
+    width: 530px; }
   section#education .title-block {
     margin-bottom: 6pt; }
   section#education .subdegree {
