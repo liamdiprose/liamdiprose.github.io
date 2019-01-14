@@ -66,23 +66,24 @@ b {
 }
 
 .a4-paper {
-  height: 297mm;
+   height: 297mm;
 
-  width: 210mm;
-  padding: 7mm;
+   width: 210mm;
+   padding: 7mm;
 }
 
 .paper {
-  box-shadow: 2mm 4mm 1mm gray;  /* TODO: media query, and not for @page */
-  margin: auto;
-  background-color: white;
+   box-shadow: 2mm 4mm 1mm gray;  /* TODO: media query, and not for @page */
+   margin: auto;
+   background-color: white;
 }
+
 
 #page-content {
   height: 100%;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
-  grid-template-rows: auto repeat(5, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr 1 1fr;
   grid-gap: 12pt;
   grid-template-areas: 
     "head head head"
@@ -91,11 +92,6 @@ b {
     "pro skl skl"
     "exp skl skl"
     "exp edu edu";
-    // "skl edu edu"
-    // "skl pro pro"
-    // "skl pro pro"
-    // "exp pro pro"
-    // "exp pro pro";
 }
 
 header {
@@ -226,7 +222,10 @@ section#education {
 
   .education-description {
     margin-right: 5pt;
-    width: 220pt;
+    // width: 220pt;
+  }
+  .education-themes {
+    width: 530px;
   }
   .title-block {
     margin-bottom: 6pt;
