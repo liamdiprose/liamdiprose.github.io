@@ -15,6 +15,14 @@ projects:
       - Linux Configuration
       - Client Communication
 
+  - title: Microcontroller Hardware Abstraction Library
+    description: Wraps microcontroller register-level control in
+                an idomatic Rust abstraction library.
+    skills: 
+      - Rust
+      - Make
+      - Embedded Devices
+
   - title: Gateway Switcher
     link: https://github.com/liamdiprose/Gatehinge
     description: Quickly switch between two network gateways from the system tray.
@@ -22,14 +30,15 @@ projects:
       - C++ (Qt)
       - QMake
       - Routing Table Networking
+        #
 
-  - title: Toy Helicopter Controller
-    link: https://www.youtube.com/watch?v=GmbMFPOEjqc
-    description: Provides control of a remote control helicopter while keeping it steady.
-    skills: 
-      - Embedded C
-      - ARM Microcontrollers
-      - Control Systems (PID)
+        #  - title: Toy Helicopter Controller
+        #    link: https://www.youtube.com/watch?v=GmbMFPOEjqc
+        #    description: Provides control of a remote control helicopter while keeping it steady.
+        #    skills: 
+        #      - Embedded C
+        #      - ARM Microcontrollers
+        #      - Control Systems (PID)
 
   - title: Cow Tracking Research
     link: https://www.youtube.com/watch?v=CcEde-phdMo
@@ -47,12 +56,6 @@ projects:
         #      - Python (Requests)
         #      - Web Scraping
 
-  # - title: Microcontroller Support Library
-  #   description: Wraps microcontroller register-level control in
-  #               an idomatic Rust API
-  #   skills: 
-  #     - Rust
-  #     - API Design
 
   # - title: Logic Circuit Simulator
   #   description: Simulates a logic circuit such as a full-adder
