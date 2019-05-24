@@ -4,8 +4,8 @@
   "description": "Liam Diprose's Resume",
   "main": "index.html",
   "scripts": {
-          "dev": "gulp watch",
-          "build": "gulp"
+    "dev": "gulp watch",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/liamdiprose/liamdiprose.github.io#readme",
   "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-mustache": "^4.0.0",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-mustache": "^4.1.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
-    "js-yaml": "^3.12.0",
-    "browser-sync": "^2.24.7"
+    "gulp-sass": "^4.0.2",
+    "js-yaml": "^3.13.1"
   }
 }
